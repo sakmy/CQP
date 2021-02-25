@@ -1,0 +1,1751 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+    <script src="libs/script/jquery.min.js"></script>
+    <link rel="stylesheet" rev="stylesheet" href="style/reset.css" type="text/css" />
+    <link rel="stylesheet" rev="stylesheet" href="style/global.css" type="text/css" />
+    <link rel="stylesheet" rev="stylesheet" href="style/index.css" type="text/css" />
+
+    <script type="text/javascript" src="js/echarts.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+	</head>
+	<body>
+    <div class="loading"></div>
+    <div class="indexwa">
+      <div class="index">
+        <div class="" id="app">
+          <div class="header">
+            <div class="mebubtn">
+              经营概览
+            </div>
+            <div class="flex1"></div>
+            <div class="toptme">
+              <a href="" class="homeicon"><img src="images/ticon1.png" alt="" /></a>
+              <span>2021年1月30日 | 14:23:34</span>
+            </div>
+            <div class ="exit">
+              <img src="images/ticon2.png" alt="" />
+              退出登录
+            </div>
+
+            <div class="danwei">
+              单位：亿
+            </div>
+          </div>
+
+          <div class="content">
+            <div class="contin">
+              <div class="leftcont">
+                <div class="tabbox">
+                  <span class="tabsp tabsp1 cur">组织</span>
+                  <span class="tabsp tabsp2">市场</span>
+                  <span class="tabsp tabsp2 tabsp2x">业态</span>
+                </div>
+                <div class="cont cont1">
+                  <div class="ctitle"><img src="images/tl1.png" alt="" /> 营业收入</div>
+                  <div class="jindubx">
+                    <div class="jintuel">
+                      <span>收入实际值/目标</span>
+                      <em>419.68/560.33</em>
+                    </div>
+                    <div class="jindwa">
+                      <div class="jinduin"></div>
+                    </div>
+                  </div>
+                  <div class="bilibox">
+                    <div class="piebx">
+                      <div class="pietl">同比 <em class="up"></em></div>
+                      <div class="piediv">
+                        <div class="chartvx" id="ch1"></div>
+                        <span class="chartwz">20%</span>
+                      </div>
+                    </div>
+                    <div class="piebx">
+                      <div class="pietl">环比 <em class="down"></em></div>
+                      <div class="piediv">
+                        <div class="chartvx" id="ch2"></div>
+                        <span class="chartwz">20%</span>
+                      </div>
+                    </div>
+                    <div class="piebx">
+                      <div class="pietl">收入完成率 </div>
+                      <div class=" ">
+                        <div class="peidms">
+                          74.89<em>%</em>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="cont cont2">
+                  <div class="ctitle"><img src="images/tl2.png" alt="" /> 利润总额</div>
+
+                  <div class="jindubx">
+                    <div class="jintuel">
+                      <span>年度利润累计/目标</span>
+                      <span>160/2000</span>
+                    </div>
+                    <div class="jindwa">
+                      <div class="jinduin"></div>
+                    </div>
+                  </div>
+                  <div class="bilibox">
+                    <div class="piebx">
+                      <div class="pietl">同比 <em class="up"></em></div>
+                      <div class="piediv">
+                        <div class="chartvx" id="ch3"></div>
+                        <span class="chartwz">20%</span>
+                      </div>
+                    </div>
+                    <div class="piebx">
+                      <div class="pietl">环比 <em class="down"></em></div>
+                      <div class="piediv">
+                        <div class="chartvx" id="ch4"></div>
+                        <span class="chartwz">20%</span>
+                      </div>
+                    </div>
+                    <div class="piebx">
+                      <div class="pietl">利润达成率 </div>
+                      <div class=" ">
+                        <div class="peidms">
+                          62.33<em>%</em>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="cont cont3">
+                  <div class="tabtitle">
+                    <span class="cur">现金流量达成情况</span>
+                    <span>现金流量趋势</span>
+                  </div>
+                  <div class="cont3in">
+                    <div class="tabDiv">
+                      <div class="jindubx">
+                        <div class="jintuel">
+                          <span>经营活动现金净流量/目标</span>
+                          <span>4562.12/5000</span>
+                        </div>
+                        <div class="jindwa">
+                          <div class="jinduin"></div>
+                        </div>
+                      </div>
+                      <div class="bilibox">
+                        <div class="piebx">
+                        <div class="pietl">同比 <em class="up"></em></div>
+                        <div class="piediv">
+                          <div class="chartvx" id="ch5"></div>
+                          <span class="chartwz">20%</span>
+                        </div>
+                      </div>
+                      <div class="piebx">
+                        <div class="pietl">环比 <em class="down"></em></div>
+                        <div class="piediv">
+                          <div class="chartvx" id="ch6"></div>
+                          <span class="chartwz">20%</span>
+                        </div>
+                      </div>
+                        <div class="piebx">
+                          <div class="pietl">达成率 </div>
+                          <div class=" ">
+                            <div class="peidms">
+                              56.33<em>%</em>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tabDiv">
+                      <div class="chartvx" id="ch7" style="height: 200px;width: 360px;"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="contzhong">
+                <div class="tabbox">
+                  <span class="tabsp tabsp1 cur">全国</span>
+                  <span class="tabsp tabsp3">区域市场</span>
+                  <span class="tabsp tabsp4">省</span>
+                </div>
+                <div class="smtab">
+                  <em class="cur">收入</em>
+                  <em>利润</em>
+                </div>
+                <div class="dituwa">
+                  <div class="ditu">
+                    <img src="images/ditu2.png" alt="" />
+
+
+                    <!-- 1 -->
+                    <div class="dituk dituk1">
+                      <div class="ditubg"></div>
+                      <div class="dituicon">
+                        <em></em>
+
+                        <em class="icondian"></em><div class="ditutan">
+                          <div class="titutl">
+                            重庆地区
+                          </div>
+                          <div class="ttnbl">
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">营业收入</span>
+                                <span class="desns1">56445.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">利润总额</span>
+                                <span class="desns1">45.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                     <!-- 2 -->
+                    <div class="dituk dituk2">
+                      <div class="ditubg"></div>
+                      <div class="dituicon">
+                        <em></em>
+
+                        <em class="icondian"></em><div class="ditutan">
+                          <div class="titutl">
+                            重庆地区
+                          </div>
+                          <div class="ttnbl">
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">营业收入</span>
+                                <span class="desns1">56445.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">利润总额</span>
+                                <span class="desns1">45.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                     <!-- 3 -->
+                    <div class="dituk dituk3">
+                      <div class="ditubg"></div>
+                      <div class="dituicon">
+                        <em></em>
+
+                        <em class="icondian"></em><div class="ditutan">
+                          <div class="titutl">
+                            重庆地区
+                          </div>
+                          <div class="ttnbl">
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">营业收入</span>
+                                <span class="desns1">56445.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">利润总额</span>
+                                <span class="desns1">45.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                     <!-- 4 -->
+                    <div class="dituk dituk4">
+                      <div class="ditubg"></div>
+                      <div class="dituicon">
+                        <em></em>
+
+                        <em class="icondian"></em><div class="ditutan">
+                          <div class="titutl">
+                            重庆地区
+                          </div>
+                          <div class="ttnbl">
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">营业收入</span>
+                                <span class="desns1">56445.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">利润总额</span>
+                                <span class="desns1">45.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                     <!-- 5 -->
+                    <div class="dituk dituk5">
+                      <div class="ditubg"></div>
+                      <div class="dituicon">
+                        <em></em>
+
+                        <em class="icondian"></em><div class="ditutan">
+                          <div class="titutl">
+                            重庆地区
+                          </div>
+                          <div class="ttnbl">
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">营业收入</span>
+                                <span class="desns1">56445.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">利润总额</span>
+                                <span class="desns1">45.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                     <!-- 6 -->
+                    <div class="dituk dituk6">
+                      <div class="ditubg"></div>
+                      <div class="dituicon lv">
+                        <em></em>
+
+                        <em class="icondian"></em><div class="ditutan">
+                          <div class="titutl">
+                            重庆地区
+                          </div>
+                          <div class="ttnbl">
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">营业收入</span>
+                                <span class="desns1">56445.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">利润总额</span>
+                                <span class="desns1">45.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                     <!-- 7 -->
+                    <div class="dituk dituk7">
+                      <div class="ditubg"></div>
+                      <div class="dituicon huang">
+                        <em></em>
+
+                        <em class="icondian"></em><div class="ditutan">
+                          <div class="titutl">
+                            重庆地区
+                          </div>
+                          <div class="ttnbl">
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">营业收入</span>
+                                <span class="desns1">56445.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">利润总额</span>
+                                <span class="desns1">45.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                     <!-- 8 -->
+                    <div class="dituk dituk8">
+                      <div class="ditubg"></div>
+                      <div class="dituicon">
+                        <em></em>
+
+                        <em class="icondian"></em><div class="ditutan">
+                          <div class="titutl">
+                            重庆地区
+                          </div>
+                          <div class="ttnbl">
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">营业收入</span>
+                                <span class="desns1">56445.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">利润总额</span>
+                                <span class="desns1">45.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                     <!-- 9 -->
+                    <div class="dituk dituk9">
+                      <div class="ditubg"></div>
+                      <div class="dituicon">
+                        <em></em>
+
+                        <em class="icondian"></em><div class="ditutan">
+                          <div class="titutl">
+                            重庆地区
+                          </div>
+                          <div class="ttnbl">
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">营业收入</span>
+                                <span class="desns1">56445.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">利润总额</span>
+                                <span class="desns1">45.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                     <!-- 10 -->
+                    <div class="dituk dituk10">
+                      <div class="ditubg"></div>
+                      <div class="dituicon">
+                        <em></em>
+
+                        <em class="icondian"></em><div class="ditutan">
+                          <div class="titutl">
+                            重庆地区
+                          </div>
+                          <div class="ttnbl">
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">营业收入</span>
+                                <span class="desns1">56445.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">利润总额</span>
+                                <span class="desns1">45.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                     <!-- 11 -->
+                    <div class="dituk dituk11">
+                      <div class="ditubg"></div>
+                      <div class="dituicon">
+                        <em></em>
+
+                        <em class="icondian"></em><div class="ditutan">
+                          <div class="titutl">
+                            重庆地区
+                          </div>
+                          <div class="ttnbl">
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">营业收入</span>
+                                <span class="desns1">56445.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">利润总额</span>
+                                <span class="desns1">45.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                     <!-- 12 -->
+                    <div class="dituk dituk12">
+                      <div class="ditubg"></div>
+                      <div class="dituicon">
+                        <em></em>
+
+                        <em class="icondian"></em><div class="ditutan">
+                          <div class="titutl">
+                            重庆地区
+                          </div>
+                          <div class="ttnbl">
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">营业收入</span>
+                                <span class="desns1">56445.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">利润总额</span>
+                                <span class="desns1">45.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                     <!-- 13 -->
+                    <div class="dituk dituk13">
+                      <div class="ditubg"></div>
+                      <div class="dituicon">
+                        <em></em>
+
+                        <em class="icondian"></em><div class="ditutan">
+                          <div class="titutl">
+                            重庆地区
+                          </div>
+                          <div class="ttnbl">
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">营业收入</span>
+                                <span class="desns1">56445.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">利润总额</span>
+                                <span class="desns1">45.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                     <!-- 14 -->
+                    <div class="dituk dituk14">
+                      <div class="ditubg"></div>
+                      <div class="dituicon">
+                        <em></em>
+
+                        <em class="icondian"></em><div class="ditutan">
+                          <div class="titutl">
+                            重庆地区
+                          </div>
+                          <div class="ttnbl">
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">营业收入</span>
+                                <span class="desns1">56445.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">利润总额</span>
+                                <span class="desns1">45.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                     <!-- 15 -->
+                    <div class="dituk dituk15">
+                      <div class="ditubg"></div>
+                      <div class="dituicon">
+                        <em></em>
+
+                        <em class="icondian"></em><div class="ditutan">
+                          <div class="titutl">
+                            重庆地区
+                          </div>
+                          <div class="ttnbl">
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">营业收入</span>
+                                <span class="desns1">56445.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">利润总额</span>
+                                <span class="desns1">45.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                     <!-- 16 -->
+                    <div class="dituk dituk16">
+                      <div class="ditubg"></div>
+                      <div class="dituicon">
+                        <em></em>
+
+                        <em class="icondian"></em><div class="ditutan">
+                          <div class="titutl">
+                            重庆地区
+                          </div>
+                          <div class="ttnbl">
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">营业收入</span>
+                                <span class="desns1">56445.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">利润总额</span>
+                                <span class="desns1">45.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                     <!-- 17 -->
+                    <div class="dituk dituk17">
+                      <div class="ditubg"></div>
+                      <div class="dituicon">
+                        <em></em>
+
+                        <em class="icondian"></em><div class="ditutan">
+                          <div class="titutl">
+                            重庆地区
+                          </div>
+                          <div class="ttnbl">
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">营业收入</span>
+                                <span class="desns1">56445.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">利润总额</span>
+                                <span class="desns1">45.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                     <!-- 18 -->
+                    <div class="dituk dituk18">
+                      <div class="ditubg"></div>
+                      <div class="dituicon">
+                        <em></em>
+
+                        <em class="icondian"></em><div class="ditutan">
+                          <div class="titutl">
+                            重庆地区
+                          </div>
+                          <div class="ttnbl">
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">营业收入</span>
+                                <span class="desns1">56445.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">利润总额</span>
+                                <span class="desns1">45.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                     <!-- 19 -->
+                    <div class="dituk dituk19">
+                      <div class="ditubg"></div>
+                      <div class="dituicon">
+                        <em></em>
+
+                        <em class="icondian"></em><div class="ditutan">
+                          <div class="titutl">
+                            重庆地区
+                          </div>
+                          <div class="ttnbl">
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">营业收入</span>
+                                <span class="desns1">56445.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">利润总额</span>
+                                <span class="desns1">45.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                     <!-- 20 -->
+                    <div class="dituk dituk20">
+                      <div class="ditubg"></div>
+                      <div class="dituicon">
+                        <em></em>
+
+                        <em class="icondian"></em><div class="ditutan">
+                          <div class="titutl">
+                            重庆地区
+                          </div>
+                          <div class="ttnbl">
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">营业收入</span>
+                                <span class="desns1">56445.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">利润总额</span>
+                                <span class="desns1">45.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                     <!-- 21 -->
+                    <div class="dituk dituk21">
+                      <div class="ditubg"></div>
+                      <div class="dituicon">
+                        <em></em>
+
+                        <em class="icondian"></em><div class="ditutan">
+                          <div class="titutl">
+                            重庆地区
+                          </div>
+                          <div class="ttnbl">
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">营业收入</span>
+                                <span class="desns1">56445.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">利润总额</span>
+                                <span class="desns1">45.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                     <!-- 22 -->
+                    <div class="dituk dituk22">
+                      <div class="ditubg"></div>
+                      <div class="dituicon">
+                        <em></em>
+
+                        <em class="icondian"></em><div class="ditutan">
+                          <div class="titutl">
+                            重庆地区
+                          </div>
+                          <div class="ttnbl">
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">营业收入</span>
+                                <span class="desns1">56445.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">利润总额</span>
+                                <span class="desns1">45.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                     <!-- 23 -->
+                    <div class="dituk dituk23">
+                      <div class="ditubg"></div>
+                      <div class="dituicon">
+                        <em></em>
+
+                        <em class="icondian"></em><div class="ditutan">
+                          <div class="titutl">
+                            重庆地区
+                          </div>
+                          <div class="ttnbl">
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">营业收入</span>
+                                <span class="desns1">56445.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">利润总额</span>
+                                <span class="desns1">45.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                     <!-- 24 -->
+                    <div class="dituk dituk24">
+                      <div class="ditubg"></div>
+                      <div class="dituicon">
+                        <em></em>
+
+                        <em class="icondian"></em><div class="ditutan">
+                          <div class="titutl">
+                            重庆地区
+                          </div>
+                          <div class="ttnbl">
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">营业收入</span>
+                                <span class="desns1">56445.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">利润总额</span>
+                                <span class="desns1">45.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                     <!-- 25 -->
+                    <div class="dituk dituk25">
+                      <div class="ditubg"></div>
+                      <div class="dituicon">
+                        <em></em>
+
+                        <em class="icondian"></em><div class="ditutan">
+                          <div class="titutl">
+                            重庆地区
+                          </div>
+                          <div class="ttnbl">
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">营业收入</span>
+                                <span class="desns1">56445.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">利润总额</span>
+                                <span class="desns1">45.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                     <!-- 26 -->
+                    <div class="dituk dituk26">
+                      <div class="ditubg"></div>
+                      <div class="dituicon">
+                        <em></em>
+
+                        <em class="icondian"></em><div class="ditutan">
+                          <div class="titutl">
+                            重庆地区
+                          </div>
+                          <div class="ttnbl">
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">营业收入</span>
+                                <span class="desns1">56445.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">利润总额</span>
+                                <span class="desns1">45.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                     <!-- 27 -->
+                    <div class="dituk dituk27">
+                      <div class="ditubg"></div>
+                      <div class="dituicon">
+                        <em></em>
+
+                        <em class="icondian"></em><div class="ditutan">
+                          <div class="titutl">
+                            重庆地区
+                          </div>
+                          <div class="ttnbl">
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">营业收入</span>
+                                <span class="desns1">56445.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">利润总额</span>
+                                <span class="desns1">45.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                     <!-- 28 -->
+                    <div class="dituk dituk28">
+                      <div class="ditubg"></div>
+                      <div class="dituicon">
+                        <em></em>
+
+                        <em class="icondian"></em><div class="ditutan">
+                          <div class="titutl">
+                            重庆地区
+                          </div>
+                          <div class="ttnbl">
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">营业收入</span>
+                                <span class="desns1">56445.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">利润总额</span>
+                                <span class="desns1">45.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                     <!-- 29 -->
+                    <div class="dituk dituk29">
+                      <div class="ditubg"></div>
+                      <div class="dituicon">
+                        <em></em>
+
+                        <em class="icondian"></em><div class="ditutan">
+                          <div class="titutl">
+                            重庆地区
+                          </div>
+                          <div class="ttnbl">
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">营业收入</span>
+                                <span class="desns1">56445.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">利润总额</span>
+                                <span class="desns1">45.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                     <!-- 30 -->
+                    <div class="dituk dituk30">
+                      <div class="ditubg"></div>
+                      <div class="dituicon">
+                        <em></em>
+
+                        <em class="icondian"></em><div class="ditutan">
+                          <div class="titutl">
+                            重庆地区
+                          </div>
+                          <div class="ttnbl">
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">营业收入</span>
+                                <span class="desns1">56445.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">利润总额</span>
+                                <span class="desns1">45.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                     <!-- 31 -->
+                    <div class="dituk dituk31">
+                      <div class="ditubg"></div>
+                      <div class="dituicon">
+                        <em></em>
+
+                        <em class="icondian"></em><div class="ditutan">
+                          <div class="titutl">
+                            重庆地区
+                          </div>
+                          <div class="ttnbl">
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">营业收入</span>
+                                <span class="desns1">56445.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">利润总额</span>
+                                <span class="desns1">45.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+
+
+
+
+                    <!--  -->
+
+
+                    <div class="diticmt">
+                      <span><em class="diicmt diicmt1"></em>>50亿</span>
+                      <span><em class="diicmt diicmt2"></em>>10~50亿</span>
+                      <span><em class="diicmt diicmt3"></em>><10亿</span>
+                    </div>
+                  </div>
+
+                  <div class="ditu">
+                    <img src="images/ditu2.png" alt="" />
+
+
+                    <!-- 1 -->
+                    <div class="dituk dituk32">
+                      <div class="ditubg"></div>
+                      <div class="dituicon dituiconsj">
+                        <em></em>
+
+                        <em class="icondian"></em><div class="ditutan">
+                          <div class="titutl">
+                            重庆地区
+                          </div>
+                          <div class="ttnbl">
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">营业收入</span>
+                                <span class="desns1">56445.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">利润总额</span>
+                                <span class="desns1">45.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="dituk dituk33">
+                      <div class="ditubg"></div>
+                      <div class="dituicon dituiconsj">
+                        <em></em>
+
+                        <em class="icondian"></em><div class="ditutan">
+                          <div class="titutl">
+                            重庆地区
+                          </div>
+                          <div class="ttnbl">
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">营业收入</span>
+                                <span class="desns1">56445.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+                            <div class="ttnblin">
+                              <div class="dwjsl1">
+                                <span class="desns2">利润总额</span>
+                                <span class="desns1">45.54</span>
+
+                              </div>
+                              <div class="jindwa jindwa1">
+                                <div class="jinduin"></div>
+                              </div>
+                            </div>
+
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="diticmt">
+                      <span><em class="diicmt diicmt1"></em>>50亿</span>
+                      <span><em class="diicmt diicmt2"></em>>10~50亿</span>
+                      <span><em class="diicmt diicmt3"></em>><10亿</span>
+                    </div>
+
+                  </div>
+
+                  <div class="ditu">
+                    <img src="images/ditu2.png" alt="" />
+
+                    <div class="diticmt">
+                      <span><em class="diicmt diicmt1"></em>>50亿</span>
+                      <span><em class="diicmt diicmt2"></em>>10~50亿</span>
+                      <span><em class="diicmt diicmt3"></em>><10亿</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="cont cont3">
+                  <div class="tabtitle tabtitlex">
+                    <span class="cur">营业收入</span>
+                    <span>利润总额</span>
+                  </div>
+                  <div class="cont3in">
+                    <div class="csitem">
+                      <span><em class="demem demem1"></em>本期完成</span>
+                      <span><em class="demem demem2"></em>上年同期</span>
+                      <span><em class="demem demem3"></em>同比增幅</span>
+                    </div>
+                    <div class="tblsct">
+                      <div class="ynshtab">
+                        <div class="chartvx" id="ch8" style="height: 140px;width: 890px;"></div>
+                      </div>
+                      <div class="ynshtab" style="display:none;">
+                        <!-- <div class="chartvx" id="ch8" style="height: 140px;width: 890px;"></div> -->
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="rightcont">
+                <div class="tabbox">
+                  <span class="tabsp tabsp1 cur">年</span>
+                  <span class="tabsp tabsp2">季度</span>
+                  <span class="tabsp tabsp2 tabsp2x">月</span>
+                </div>
+                <div class="cont cont1">
+                  <div class="ctitle"><img src="images/tl3.png" alt="" /> 应收账款</div>
+                  <div class="csitem csitem-pt0">
+                    <span><em class="demem demem1"></em>本期完成</span>
+                    <span><em class="demem demem2"></em>上年同期</span>
+                    <span><em class="demem demem3"></em>上年同期</span>
+                    <span><em class="demem demem4"></em>上年同期</span>
+                  </div>
+
+                  <div class="">
+                    <div class="chartvx" id="ch9" style="height: 140px;width: 390px;"></div>
+                  </div>
+
+                  <!-- <div class="zhulist">
+                    <div class="zhuitem">
+                      <div class="zhuchart"></div>
+                      <div class="zhutitl">应收净额</div>
+                    </div>
+                    <div class="zhuitem">
+                      <div class="zhuchart"></div>
+                      <div class="zhutitl">应收周转率</div>
+                    </div>
+                    <div class="zhuitem">
+                      <div class="zhuchart"></div>
+                      <div class="zhutitl">周转天数</div>
+                    </div>
+                  </div> -->
+                </div>
+                <div class="cont cont3">
+                  <div class="tabtitle">
+                    <span class="cur">细分市场利润占比</span>
+                    <span>业态利润占比</span>
+                  </div>
+                  <div class="cont3in">
+                    <div class="piedale">
+                      <div class="pecimt">
+                        <span><em class="dpoie dpoie1"></em> 药品</span>
+                        <span><em class="dpoie dpoie2"></em> 器械</span>
+                        <span><em class="dpoie dpoie3"></em> 零售</span>
+                        <span><em class="dpoie dpoie4"></em> 储备</span>
+                      </div>
+                      <div class=" ">
+                        <div class="ynshtab">
+                        <div class="chartvx" id="ch10" style="height: 200px;width: 280px;"></div>
+                        </div>
+                        <div class="ynshtab" style="display:none;"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cont cont3">
+                  <div class="tabtitle">
+                    <span class="cur">双达标</span>
+                    <span>利润</span>
+                    <span>收入</span>
+                    <span>亏损</span>
+                  </div>
+                  <div class="cont3in">
+
+
+                  <div class="dabiadmx">
+                    <div class="ynshtab">
+                      <ul>
+                        <li>
+                          <div class="dwicms"><img src="images/pai1.png" alt="" /></div>
+                          <div class="dsjibil">
+                            <div class="dwjsl1">
+                              <span class="desns1">A医药公司</span>
+                              <span class="desns2">计划值</span>
+                              <span class="desns3">2000</span>
+                              <span class="desns2">完成值/率</span>
+                              <span class="desns4">1677 /80%</span>
+                            </div>
+                            <div class="jindwa jindwa1">
+                              <div class="jinduin"></div>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="dwicms"><img src="images/pai2.png" alt="" /></div>
+                          <div class="dsjibil">
+                            <div class="dwjsl1">
+                              <span class="desns1">A医药公司</span>
+                              <span class="desns2">计划值</span>
+                              <span class="desns3">2000</span>
+                              <span class="desns2">完成值/率</span>
+                              <span class="desns4">1677 /80%</span>
+                            </div>
+                            <div class="jindwa jindwa1">
+                              <div class="jinduin"></div>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="dwicms"><img src="images/pai3.png" alt="" /></div>
+                          <div class="dsjibil">
+                            <div class="dwjsl1">
+                              <span class="desns1">A医药公司</span>
+                              <span class="desns2">计划值</span>
+                              <span class="desns3">2000</span>
+                              <span class="desns2">完成值/率</span>
+                              <span class="desns4">1677 /80%</span>
+                            </div>
+                            <div class="jindwa jindwa1">
+                              <div class="jinduin"></div>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="dwicms"><img src="images/pai4.png" alt="" /></div>
+                          <div class="dsjibil">
+                            <div class="dwjsl1">
+                              <span class="desns1">A医药公司</span>
+                              <span class="desns2">计划值</span>
+                              <span class="desns3">2000</span>
+                              <span class="desns2">完成值/率</span>
+                              <span class="desns4">1677 /80%</span>
+                            </div>
+                            <div class="jindwa jindwa1">
+                              <div class="jinduin"></div>
+                            </div>
+                          </div>
+                        </li>
+
+                      </ul>
+                      </div>
+
+                      <div class="ynshtab" style="display:none;">利润</div>
+                      <div class="ynshtab" style="display:none;">收入</div>
+                      <div class="ynshtab" style="display:none;">亏损</div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+	</body>
+
+
+
+  <script type="text/javascript">
+  var vm = new Vue({
+
+    el: "#app",
+    mounted: function(){
+
+    }
+
+  })
+  </script>
+
+
+
+
+
+</html>
