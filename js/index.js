@@ -34,11 +34,34 @@ $(function() {
 
 
   $(".tabbox span").click(function(){
-    $(this).addClass("cur").siblings().removeClass("cur");
+    $(this).toggleClass("cur").siblings().removeClass("cur");
    var x = $(this).index();
    $(this).parents(".contzhong").find('.ditu').eq(x).show().siblings().hide();
   })
 
+  $(".tablaqie>ul>li").click(function(){
+     $(this).addClass("cur").siblings().removeClass("cur");
+     var obj = $(this).parents('.tablaqie').find('li.cur');
+     var str = '';
+     var x = $(this).parents(".tabbox").attr('qie');
+     obj.each(function(index){
+       var val = $(this).text();
+       if(index != obj.length-1){
+         str = str+val+'-';
+       }else{
+         str = str+val
+       }
+       $(this).parents(".tabbox").find('[qie="'+x+'"]>span').html(str)
+     })
+
+
+  })
+  $('[qie]').click(function(){
+    var x = $(this).attr('qie')
+    $(this).parents(".tabbox").attr('qie',x);
+
+    $(this).parents(".tabbox").find('.tabla').eq(x).toggle().siblings(".tabla").hide();
+  })
 })
 
 
