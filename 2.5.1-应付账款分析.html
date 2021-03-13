@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+    <script src="libs/script/jquery.min.js"></script>
+    <link rel="stylesheet" rev="stylesheet" href="style/reset.css" type="text/css" />
+    <link rel="stylesheet" rev="stylesheet" href="style/global.css" type="text/css" />
+    <link rel="stylesheet" rev="stylesheet" href="style/index.css" type="text/css" />
+    <link href="libs/style/font-awesome.min.css" rel="stylesheet">
+    <script type="text/javascript" src="js/echarts.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+  </head>
+  <body>
+    <div class="loading"></div>
+    <div class="indexwa">
+      <div class="index">
+        <div class="" id="app">
+          <div class="header">
+            <div class="mebubtn">
+              经营概览
+            </div>
+            <div class="flex1"></div>
+            <div class="toptme">
+              <a href="" class="homeicon"><img src="images/ticon1.png" alt="" /></a>
+              <span>2021年1月30日 | 14:23:34</span>
+            </div>
+            <div class ="exit">
+              <img src="images/ticon2.png" alt="" />
+              退出登录
+            </div>
+
+            <div class="danwei">
+              单位：亿
+            </div>
+          </div>
+
+          <div class="content">
+            <div class="bigtabsz">
+              <div class="tabbox tabbox-js">
+
+                 <div class="gsomc">公司名称</div>
+
+
+                  <span class="tabsp tabsp1 tbbigsx" qie="0"><div class="flex1"></div><span>所有</span> <em class="fa fa-angle-down"></em><em class="fa fa-angle-up"></em></span>
+
+                  <div class="gsomc">年份</div>
+                  <span class="tabsp tabsp2 tbbigsx" qie="1"><div class="flex1"></div><span>年份</span> <em class="fa fa-angle-down"></em><em class="fa fa-angle-up"></em></span>
+
+                   <div class="gsomc">月份</div>
+                  <span class="tabsp tabsp2 tabsp2x tbbigsx" qie="2"><div class="flex1"></div><span>12月</span> <em class="fa fa-angle-down"></em><em class="fa fa-angle-up"></em></span>
+
+                   <div class="gsomc">是否关联交易</div>
+                  <span class="tabsp tabsp2 tabsp2x tbbigsx" qie="3"><div class="flex1"></div><span>多选</span> <em class="fa fa-angle-down"></em><em class="fa fa-angle-up"></em></span>
+
+
+
+
+                  <div class="">
+                    <div class="tabla tabla2">
+                      <div class="tablain">
+                        <div class="tablaqie tablaqie2">
+                          <ul>
+                            <li class="cur">公司名称1</li>
+                            <li  >公司名称2</li>
+                            <li  >公司名称3</li>
+                            <li  >公司名称4</li>
+                            <li  >公司名称5</li>
+                            <li  >公司名称6</li>
+                            <li  >公司名称7</li>
+                            <li  >公司名称8</li>
+
+
+                          </ul>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tabla tabla2">
+                      <div class="tablain">
+                        <div class="tablaqie tablaqie2">
+                          <ul>
+                            <li class="cur">2021年</li>
+                            <li  >2020年</li>
+                            <li  >2019年</li>
+                            <li  >2018年</li>
+                            <li  >2017年</li>
+                            <li  >2016年</li>
+                            <li  >2015年</li>
+                            <li  >2014年</li>
+
+
+                          </ul>
+
+                        </div>
+                      </div>
+                    </div>
+
+
+
+
+                     <div class="tabla tabla2">
+                      <div class="tablain">
+                        <div class="tablaqie tablaqie2">
+                          <ul>
+                            <li class="cur">1月</li>
+                            <li  >2月</li>
+                            <li  >3月</li>
+                            <li  >4月</li>
+                            <li  >5月</li>
+                            <li  >6月</li>
+                            <li  >7月</li>
+                            <li  >8月</li>
+                            <li  >9月</li>
+                            <li  >10月</li>
+                            <li  >11月</li>
+                            <li  >12月</li>
+
+                          </ul>
+
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="tabla tabla2">
+                      <div class="tablain">
+                        <div class="tablaqie tablaqie2">
+                          <ul>
+                            <li class="cur">是</li>
+                            <li  >否</li>
+
+
+                          </ul>
+
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                  </div>
+                </div>
+            </div>
+            <div class="contin">
+              <div class="leftcont leftcont2cc">
+                <div class="xuacont">
+                  <ul>
+                    <li>0-3月</li>
+                    <li>4-6月</li>
+                    <li>7-9月</li>
+                    <li>10月</li>
+                    <li>12月</li>
+                  </ul>
+                  <div class="xuaaniu">
+                    <div class="xabtn lbtns cur"></div>
+                    <div class="xabtn rbtns"></div>
+                  </div>
+                </div>
+                <div class="cont contx1">
+                  <div class="ctitle ctitle-mb0"><img src="images/jiangpai.png" alt="" /> 业态排名</div>
+                  <div class="chartvx" id="ch1" style="height: 260px;width: 100%;"></div>
+                </div>
+                <div class="cont contx1">
+                  <div class="ctitle ctitle-mb0"><img src="images/jiangpai.png" alt="" /> 公司排名</div>
+                  <div class=" ">
+
+                      <div class=" ">
+                        <div class="ynshtab">
+                        <div class="chartvx" id="ch2" style="height: 260px;width: 100%;"></div>
+                        </div>
+
+                      </div>
+                    </div>
+                </div>
+
+
+
+
+              </div>
+              <div class="bigright">
+                <div class="bgrigct1">
+                   <div class="brcimsv">
+                     <div class="brcimsv1"><img src="images/aaicon1.png" alt="" /></div>
+                     <div class="brcimsv2">
+                       <div class="brcimsv2a">应付账款</div>
+                       <div class="brcimsv2b countnum">4.76</div>
+                     </div>
+                   </div>
+
+                   <div class="brcimsv">
+                     <div class="brcimsv1"><img src="images/aaicon2.png" alt="" /></div>
+                     <div class="brcimsv2">
+                       <div class="brcimsv2a">同期应付账款</div>
+                       <div class="brcimsv2b countnum">86.31</div>
+                     </div>
+                   </div>
+
+                   <div class="brcimsv">
+                     <div class="brcimsv1"><img src="images/aaicon3.png" alt="" /></div>
+                     <div class="brcimsv2">
+                       <div class="brcimsv2a">应付账款</div>
+                       <div class="brcimsv2b countnum">1,489</div>
+                     </div>
+                   </div>
+
+                   <div class="brcimsv">
+                     <div class="brcimsv1"><img src="images/aaicon4.png" alt="" /></div>
+                     <div class="brcimsv2">
+                       <div class="brcimsv2a">应付账款</div>
+                       <div class="brcimsv2b countnum">3.54</div>
+                     </div>
+                   </div>
+
+
+                </div>
+                <div class=" bgrigct2x">
+                  <div class="bgrigct2xa">
+                      <div class="ctitle   ctmwb"><img src="images/tongbi.png" alt="" /> 应付同比趋势
+                      <div class="flex1"></div>
+                      <div class="csitem"><span><em class="demem demem1"></em>同期期末应付账款</span> <span><em class="demem demem2"></em>期末应付账款</span> <span><em class="demem demem3"></em>期末应付账款同比增长率%</span></div>
+                    </div>
+
+                    <div class="tblsct">
+                      <div class="ynshtab">
+                        <div class="chartvx" id="ch4" style="height: 250px;width: 100%;"></div>
+                      </div>
+
+
+                    </div>
+                  </div>
+
+                  <div class="bgrigct2xb">
+                     <div class="ctitle  "><img src="images/bing.png" alt="" /> 应付占比</div>
+                    <div class="piedale">
+                      <div class="pecimt">
+                        <span> 账龄段</span>
+                        <span><em class="dpoie dpoie1"></em> 0-3月</span>
+                        <span><em class="dpoie dpoie2"></em> 4-6月</span>
+                        <span><em class="dpoie dpoie3"></em> 7-9月</span>
+                        <span><em class="dpoie dpoie4"></em> 10月</span>
+                        <span><em class="dpoie dpoie6"></em> 11月</span>
+                        <span><em class="dpoie dpoie5"></em> 12月</span>
+                        <span><em class="dpoie dpoie7"></em> 1-2年</span>
+                      </div>
+                      <div class=" ">
+                        <div class="ynshtab">
+                        <div class="chartvx" id="ch3" style="height: 200px;width: 280px;"></div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="bgrigct3x">
+                  <div class="vnntba1">
+                    <table>
+                      <tr>
+                        <th><div class="tbtb tb1">公司简称</div></th>
+                        <th><div class="tbtb tb2">供应商名称</div></th>
+                        <th><div class="tbtb tb3">采购类型</div></th>
+                        <th><div class="tbtb tb4">经济类型</div></th>
+                        <th><div class="tbtb tb5">应付账款</div></th>
+                        <th><div class="tbtb tb6">0-3月期...</div></th>
+                        <th><div class="tbtb tb7">4-6月期...</div></th>
+                        <th><div class="tbtb tb8">7-9月期...</div></th>
+                      </tr>
+
+
+                    </table>
+                  </div>
+
+                  <div class="vnntba2 ">
+                    <table>
+                      <tr>
+                        <td><div class="tbtb tb1">新特药品</div></td>
+                        <td><div class="tbtb tb2">阿斯利康制药有限公司</div></td>
+                        <td><div class="tbtb tb3">纯购</div></td>
+                        <td><div class="tbtb tb4">-</div></td>
+                        <td><div class="tbtb tb5">5.59</div></td>
+                        <td><div class="tbtb tb6">0.97</div></td>
+                        <td><div class="tbtb tb7">1.44</div></td>
+                        <td><div class="tbtb tb8">0.85</div></td>
+                      </tr><tr>
+                        <td><div class="tbtb tb1">新特药品</div></td>
+                        <td><div class="tbtb tb2">阿斯利康制药有限公司</div></td>
+                        <td><div class="tbtb tb3">纯购</div></td>
+                        <td><div class="tbtb tb4">-</div></td>
+                        <td><div class="tbtb tb5">5.59</div></td>
+                        <td><div class="tbtb tb6">0.97</div></td>
+                        <td><div class="tbtb tb7">1.44</div></td>
+                        <td><div class="tbtb tb8">0.85</div></td>
+                      </tr><tr>
+                        <td><div class="tbtb tb1">新特药品</div></td>
+                        <td><div class="tbtb tb2">阿斯利康制药有限公司</div></td>
+                        <td><div class="tbtb tb3">纯购</div></td>
+                        <td><div class="tbtb tb4">-</div></td>
+                        <td><div class="tbtb tb5">5.59</div></td>
+                        <td><div class="tbtb tb6">0.97</div></td>
+                        <td><div class="tbtb tb7">1.44</div></td>
+                        <td><div class="tbtb tb8">0.85</div></td>
+                      </tr><tr>
+                        <td><div class="tbtb tb1">新特药品</div></td>
+                        <td><div class="tbtb tb2">阿斯利康制药有限公司</div></td>
+                        <td><div class="tbtb tb3">纯购</div></td>
+                        <td><div class="tbtb tb4">-</div></td>
+                        <td><div class="tbtb tb5">5.59</div></td>
+                        <td><div class="tbtb tb6">0.97</div></td>
+                        <td><div class="tbtb tb7">1.44</div></td>
+                        <td><div class="tbtb tb8">0.85</div></td>
+                      </tr><tr>
+                        <td><div class="tbtb tb1">新特药品</div></td>
+                        <td><div class="tbtb tb2">阿斯利康制药有限公司</div></td>
+                        <td><div class="tbtb tb3">纯购</div></td>
+                        <td><div class="tbtb tb4">-</div></td>
+                        <td><div class="tbtb tb5">5.59</div></td>
+                        <td><div class="tbtb tb6">0.97</div></td>
+                        <td><div class="tbtb tb7">1.44</div></td>
+                        <td><div class="tbtb tb8">0.85</div></td>
+                      </tr><tr>
+                        <td><div class="tbtb tb1">新特药品</div></td>
+                        <td><div class="tbtb tb2">阿斯利康制药有限公司</div></td>
+                        <td><div class="tbtb tb3">纯购</div></td>
+                        <td><div class="tbtb tb4">-</div></td>
+                        <td><div class="tbtb tb5">5.59</div></td>
+                        <td><div class="tbtb tb6">0.97</div></td>
+                        <td><div class="tbtb tb7">1.44</div></td>
+                        <td><div class="tbtb tb8">0.85</div></td>
+                      </tr><tr>
+                        <td><div class="tbtb tb1">新特药品</div></td>
+                        <td><div class="tbtb tb2">阿斯利康制药有限公司</div></td>
+                        <td><div class="tbtb tb3">纯购</div></td>
+                        <td><div class="tbtb tb4">-</div></td>
+                        <td><div class="tbtb tb5">5.59</div></td>
+                        <td><div class="tbtb tb6">0.97</div></td>
+                        <td><div class="tbtb tb7">1.44</div></td>
+                        <td><div class="tbtb tb8">0.85</div></td>
+                      </tr><tr>
+                        <td><div class="tbtb tb1">新特药品</div></td>
+                        <td><div class="tbtb tb2">阿斯利康制药有限公司</div></td>
+                        <td><div class="tbtb tb3">纯购</div></td>
+                        <td><div class="tbtb tb4">-</div></td>
+                        <td><div class="tbtb tb5">5.59</div></td>
+                        <td><div class="tbtb tb6">0.97</div></td>
+                        <td><div class="tbtb tb7">1.44</div></td>
+                        <td><div class="tbtb tb8">0.85</div></td>
+                      </tr><tr>
+                        <td><div class="tbtb tb1">新特药品</div></td>
+                        <td><div class="tbtb tb2">阿斯利康制药有限公司</div></td>
+                        <td><div class="tbtb tb3">纯购</div></td>
+                        <td><div class="tbtb tb4">-</div></td>
+                        <td><div class="tbtb tb5">5.59</div></td>
+                        <td><div class="tbtb tb6">0.97</div></td>
+                        <td><div class="tbtb tb7">1.44</div></td>
+                        <td><div class="tbtb tb8">0.85</div></td>
+                      </tr><tr>
+                        <td><div class="tbtb tb1">新特药品</div></td>
+                        <td><div class="tbtb tb2">阿斯利康制药有限公司</div></td>
+                        <td><div class="tbtb tb3">纯购</div></td>
+                        <td><div class="tbtb tb4">-</div></td>
+                        <td><div class="tbtb tb5">5.59</div></td>
+                        <td><div class="tbtb tb6">0.97</div></td>
+                        <td><div class="tbtb tb7">1.44</div></td>
+                        <td><div class="tbtb tb8">0.85</div></td>
+                      </tr><tr>
+                        <td><div class="tbtb tb1">新特药品</div></td>
+                        <td><div class="tbtb tb2">阿斯利康制药有限公司</div></td>
+                        <td><div class="tbtb tb3">纯购</div></td>
+                        <td><div class="tbtb tb4">-</div></td>
+                        <td><div class="tbtb tb5">5.59</div></td>
+                        <td><div class="tbtb tb6">0.97</div></td>
+                        <td><div class="tbtb tb7">1.44</div></td>
+                        <td><div class="tbtb tb8">0.85</div></td>
+                      </tr><tr>
+                        <td><div class="tbtb tb1">新特药品</div></td>
+                        <td><div class="tbtb tb2">阿斯利康制药有限公司</div></td>
+                        <td><div class="tbtb tb3">纯购</div></td>
+                        <td><div class="tbtb tb4">-</div></td>
+                        <td><div class="tbtb tb5">5.59</div></td>
+                        <td><div class="tbtb tb6">0.97</div></td>
+                        <td><div class="tbtb tb7">1.44</div></td>
+                        <td><div class="tbtb tb8">0.85</div></td>
+                      </tr><tr>
+                        <td><div class="tbtb tb1">新特药品</div></td>
+                        <td><div class="tbtb tb2">阿斯利康制药有限公司</div></td>
+                        <td><div class="tbtb tb3">纯购</div></td>
+                        <td><div class="tbtb tb4">-</div></td>
+                        <td><div class="tbtb tb5">5.59</div></td>
+                        <td><div class="tbtb tb6">0.97</div></td>
+                        <td><div class="tbtb tb7">1.44</div></td>
+                        <td><div class="tbtb tb8">0.85</div></td>
+                      </tr><tr>
+                        <td><div class="tbtb tb1">新特药品</div></td>
+                        <td><div class="tbtb tb2">阿斯利康制药有限公司</div></td>
+                        <td><div class="tbtb tb3">纯购</div></td>
+                        <td><div class="tbtb tb4">-</div></td>
+                        <td><div class="tbtb tb5">5.59</div></td>
+                        <td><div class="tbtb tb6">0.97</div></td>
+                        <td><div class="tbtb tb7">1.44</div></td>
+                        <td><div class="tbtb tb8">0.85</div></td>
+                      </tr><tr>
+                        <td><div class="tbtb tb1">新特药品</div></td>
+                        <td><div class="tbtb tb2">阿斯利康制药有限公司</div></td>
+                        <td><div class="tbtb tb3">纯购</div></td>
+                        <td><div class="tbtb tb4">-</div></td>
+                        <td><div class="tbtb tb5">5.59</div></td>
+                        <td><div class="tbtb tb6">0.97</div></td>
+                        <td><div class="tbtb tb7">1.44</div></td>
+                        <td><div class="tbtb tb8">0.85</div></td>
+                      </tr><tr>
+                        <td><div class="tbtb tb1">新特药品</div></td>
+                        <td><div class="tbtb tb2">阿斯利康制药有限公司</div></td>
+                        <td><div class="tbtb tb3">纯购</div></td>
+                        <td><div class="tbtb tb4">-</div></td>
+                        <td><div class="tbtb tb5">5.59</div></td>
+                        <td><div class="tbtb tb6">0.97</div></td>
+                        <td><div class="tbtb tb7">1.44</div></td>
+                        <td><div class="tbtb tb8">0.85</div></td>
+                      </tr>
+
+
+                    </table>
+                  </div>
+
+                  <div class="vnntba3 ">
+                    <table>
+                      <tr>
+                        <td><div class="tbtb tb1"><div class="zfhsu">总计</div></div></td>
+                        <td><div class="tbtb tb2"> </div></td>
+                        <td><div class="tbtb tb3"> </div></td>
+                        <td><div class="tbtb tb4"> </div></td>
+                        <td><div class="tbtb tb5"><div class="shzs">4.76</div></div></td>
+                        <td><div class="tbtb tb6"><div class="shzs">4.76</div></div></td>
+                        <td><div class="tbtb tb7"><div class="shzs">4.76</div></div></td>
+                        <td><div class="tbtb tb8"><div class="shzs">4.76</div></div></td>
+
+                      </tr>
+
+
+                    </table>
+                  </div>
+
+
+
+
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+
+<script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
+<script type="text/javascript" src="js/jquery.countup.min.js"></script>
+
+
+  <script type="text/javascript">
+  var vm = new Vue({
+
+    el: "#app",
+    mounted: function(){
+      $(".countnum").countUp({
+        delay: 10,
+        time: 2000
+      });
+    }
+
+  });
+  </script>
+
+<script type="text/javascript" src="js/echart_2_5_1.js"></script>
+
+
+</html>
