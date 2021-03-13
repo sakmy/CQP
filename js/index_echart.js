@@ -8,10 +8,29 @@ window.onload = function() {
   var ch4 = echarts.init(document.getElementById('ch4'));
   var ch5 = echarts.init(document.getElementById('ch5'));
   var ch6 = echarts.init(document.getElementById('ch6'));
-  var ch7 = echarts.init(document.getElementById('ch7'));
+  //var ch7 = echarts.init(document.getElementById('ch7'));
   var ch8 = echarts.init(document.getElementById('ch8'));
-  var ch9 = echarts.init(document.getElementById('ch9'));
+  //var ch9 = echarts.init(document.getElementById('ch9'));
   var ch10 = echarts.init(document.getElementById('ch10'));
+  var ch11 = echarts.init(document.getElementById('ch11'));
+
+
+  var chx1 = echarts.init(document.getElementById('chx1'));
+  var chx2 = echarts.init(document.getElementById('chx2'));
+
+
+  var chx3 = echarts.init(document.getElementById('chx3'));
+  var chx4 = echarts.init(document.getElementById('chx4'));
+
+
+
+  var chv1 = echarts.init(document.getElementById('chv1'));
+  var chv2 = echarts.init(document.getElementById('chv2'));
+
+
+  var chv3 = echarts.init(document.getElementById('chv3'));
+  var chv4 = echarts.init(document.getElementById('chv4'));
+
   var op1 = {
     title: {
       show: false
@@ -491,10 +510,29 @@ window.onload = function() {
   ch4.setOption(op2);
   ch5.setOption(op1);
   ch6.setOption(op2);
-  ch7.setOption(op3);
+  //ch7.setOption(op3);
   ch8.setOption(op4);
-  ch9.setOption(op5);
+  //ch9.setOption(op5);
   ch10.setOption(op6);
+  ch11.setOption(op6);
+
+
+  chx1.setOption(op1);
+  chx2.setOption(op2);
+
+
+  chx3.setOption(op1);
+  chx4.setOption(op2);
+
+
+  chv1.setOption(op1);
+  chv2.setOption(op2);
+
+
+  chv3.setOption(op1);
+  chv4.setOption(op2);
+
+
 
 
 }
