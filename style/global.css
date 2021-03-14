@@ -1,4 +1,4 @@
-﻿a {
+a {
   text-decoration: none;
 }
 .header {
@@ -540,6 +540,7 @@ border-radius: 0px 12px 12px 0px;*/
   padding: 7px 0;
   display: flex;
   align-items: center;
+    width: 100px;
 }
 .dpoie {
   display: block;
@@ -1378,12 +1379,12 @@ border-radius: 0px 12px 12px 0px;*/
 .brritem2 {
   font-weight: bold;
   color: #333333;
-  line-height: 33px;
+  line-height: 40px;
   font-family: DINCondensed-Bold, DINCondensed;
   background: linear-gradient(360deg, #FD5900 0%, #FFDE00 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 33px;
+  font-size: 40px;
 }
 .bgrigct2 {
   background: #FFFFFF;
@@ -1870,4 +1871,106 @@ border-radius: 0px 12px 12px 0px;*/
 .tinemttm2 em{
   font-weight:400;
   margin-left: 5px;
+}
+
+.demem1_1{
+	background: #2073FF;
+}
+.demem2_2{
+	background: #FFC600;
+}
+.demem3_3{
+	background: #FE6200;
+}
+.demem4_4{
+	background: linear-gradient(360deg, #71EEB7 0%, #00BEC5 100%);
+}
+
+.mw1{
+	width: 160px;
+}
+.mw2{
+	width: 147px;
+}
+.mw3{
+	width: 120px;
+	padding: 0;
+}
+.mw4{
+	width: 160px;
+}
+.mw5{
+	width: 190px;
+}
+.mw6{
+	width: 190px;
+}
+.mw1_1{
+	padding-left: 0px;
+	padding-right: 0;
+	padding: 0;
+	border-right: none;
+}
+.vertop td{
+	vertical-align: top;
+}
+.vertop td .tbtb{
+	line-height: 35px;
+}
+.vertop .fuji{
+	line-height: 36px;
+}
+.mtop0{
+	margin-top: 0;
+}
+.h340{
+	height: 340px;
+}
+.mt30{
+	margin-top: 40px;
+}
+.h484{
+	height: 484px;
+}
+.vertop{
+	height: 380px;
+}
+.listtype2 .brritem{
+	width: 286px;
+	height: 120px;
+}
+.listtype2{
+	padding-top: 24px;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+.demem3_1{
+	position: relative;
+	padding-left: 7px;
+}
+.demem3_1:after{
+	content: "";
+	width: 7px;
+	height: 7px;
+	background: #FFFFFF;
+	box-shadow: 0px 2px 4px 0px rgba(0, 35, 130, 0.2);
+	border: 3px solid #0064DC;
+	position: absolute;
+	left: 0px;
+	top: 0;
+	border-radius: 40px;
+	z-index: 44;
+	left: 6px;
+}
+.demem3_1:before{
+	width: 25px;
+	height: 2px;
+	position: absolute;
+	content: "";
+	background: #0064DC;
+	left: 0;
+	top: 5px;
+}
+.fz20{
+	font-size: 26px;
 }
