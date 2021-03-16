@@ -19,7 +19,7 @@
         <div class="" id="app">
           <div class="header">
             <div class="mebubtn">
-              库存概览
+              采购概览
             </div>
             <div class="flex1"></div>
             <div class="toptme">
@@ -144,28 +144,28 @@
             </div>
 			<div class="bgrigct1 listtype2">
 			  <div class="brritem">
-			    <div class="brritem1">品规数</div>
-			    <div class="brritem2"><em>37170</em></div>
+			    <div class="brritem1">购进金额</div>
+			    <div class="brritem2"><em>32.47</em></div>
 			  </div>
 			  <div class="brritem">
-			    <div class="brritem1">库存量</div>
-			    <div class="brritem2"><em>112958206</em></div>
+			    <div class="brritem1">同期购进金额</div>
+			    <div class="brritem2"><em>32.94</em></div>
 			  </div>
 			  <div class="brritem">
-			    <div class="brritem1">库存金额</div>
-			    <div class="brritem2"><em>30.35</em></div>
+			    <div class="brritem1">同比增长率</div>
+			    <div class="brritem2"><em>-1.45</em>%</div>
 			  </div>
 			  <div class="brritem">
-			    <div class="brritem1">同期库存金额</div>
-			    <div class="brritem2 fz20">（空白）</div>
+			    <div class="brritem1">年累计购进金额</div>
+			    <div class="brritem2"><em>325.65</em></div>
 			  </div>
 			  <div class="brritem">
-			    <div class="brritem1">前100品质库存金额</div>
-			    <div class="brritem2"><em>7.93</em></div>
+			    <div class="brritem1">同期年累计购进金额</div>
+			    <div class="brritem2"><em>312.36</em></div>
 			  </div>
 			  <div class="brritem">
-			    <div class="brritem1">库存周转天数</div>
-			    <div class="brritem2"><em>22</em></div>
+			    <div class="brritem1">年累计同比增长率</div>
+			    <div class="brritem2"><em>4.25</em>%</div>
 			  </div>
 			
 			</div>
@@ -173,28 +173,16 @@
               <div class="leftcont leftcont2cc">
 
                 <div class="cont cont1 h340">
-                  <div class="ctitle ctitle-mb0"><img src="images/icon-kcxq@2x.png" alt="" /> 库存效期</div>
-                  <div class="chartvx" id="ch1" style="height:270px;width: 100%;"></div>
+                  <div class="ctitle ctitle-mb0"><img src="images/jiangpai.png" alt="" /> 厂牌TOP10</div>
+				  <div class="hscroll">
+					  <div class="chartvx" id="ch1" style="height:370px;width: 100%;"></div>
+				  </div>
                 </div>
                 <div class="cont cont1 h340">
-                  <div class="ctitle ctitle-mb0"><img src="images/bing.png" alt="" /> 库存库龄</div>
-                  <div class="piedale mt30">
-                      <div class="pecimt">
-						<div class="title">库龄段</div>
-                        <span><em class="dpoie dpoie1"></em> 6个月内</span>
-                        <span><em class="dpoie dpoie2"></em> 1年内</span>
-                        <span><em class="dpoie dpoie3"></em> 空白</span>
-                        <span><em class="dpoie dpoie4"></em> 2年内</span>
-                        <span><em class="dpoie dpoie5"></em> 2年以上</span>
-
-                      </div>
-                      <div class=" ">
-                        <div class="ynshtab">
-                        <div class="chartvx" id="ch2" style="height: 200px;width: 280px;"></div>
-                        </div>
-
-                      </div>
-                    </div>
+                  <div class="ctitle ctitle-mb0"><img src="images/jiangpai.png" alt="" /> 供应商TOP10</div>
+                  <div class="hscroll">
+                  	<div class="chartvx" id="ch2" style="height:370px;width: 100%;"></div>
+                  </div>
                 </div>
 
 
@@ -203,37 +191,45 @@
               <div class="bigright">
                 <div class=" bgrigct2x mtop0">
                   <div class="bgrigct2xa h340">
-                      <div class="ctitle   ctmwb"><img src="images/icon-kcdxb@2x.png" alt="" /> 库存动销比
-                      <div class="flex1"></div>
-                      <div class="csitem">
-						  <span><em class="demem demem1"></em>期末库存品规数</span> 
-						  <span><em class="demem demem2"></em>销售品规数</span> 
-						  <span><em class="demem demem3_1"></em>动销比</span>
-					  </div>
-                    </div>
-                
+                   
+					
+					<div class="ctitle ctitle-mb0"><img src="images/icon-sales@2x.png" alt="" /> 采购金额
+					    <div class="flex1"></div> 
+						<div class="csitem top0">
+							<span><em class="demem demem_c_1"></em>赊帐金额</span>
+							<span><em class="demem demem_c_2"></em>预付款金额</span> 
+						</div>
+					</div>
+										
+										
                     <div class="tblsct">
                       <div class="ynshtab">
-                        <div class="chartvx" id="ch4" style="height: 250px;width: 100%;"></div>
+                        <div class="chartvx" id="ch4" style="height: 260px;width: 100%;"></div>
                       </div>
-                
-                
                     </div>
+					
+					
+					
                   </div>
                 
                   <div class="bgrigct2xb h340">
-                     <div class="ctitle  "><img src="images/icon-trend@2x.png" alt="" /> 库存周转趋势</div>
-                     <div class="csitem">
-						 <span><em class="demem demem1"></em>同期含税库存周转天数</span> 
-						 <span><em class="demem demem2"></em>含税库存周转天数</span> 
-					</div>
-					<div class="chartvx" id="ch5" style="height:220px;width: 100%;"></div>
+                     <div class="ctitle  "><img src="images/jiangpai.png" alt="" /> 产品大类排名</div>
+                     
+					<div class="chartvx" id="ch5" style="height:250px;width: 100%;"></div>
                   </div>
                 </div>
 				
 				
 				<div class="bgrigct2 h340">
-					<div class="ctitle ctitle-mb0"><img src="images/icon-plkczzts@2x.png" alt=""> 品类库存周转天数</div> 
+					
+					<div class="ctitle   ctmwb"><img src="images/icon-cgvsqn@2x.png" alt=""> 采购VS去年
+					                      <div class="flex1"></div> <div class="csitem pb0">
+										  <span><em class="demem demem1"></em>含税购进金额</span> 
+										  <span><em class="demem demem2"></em>同期含税购进金额</span> 
+										  <span><em class="demem demem3_1"></em>含税购进金额同比增长率</span></div>
+										  </div>
+					
+				
 					<div class="tblsct">
 						<div class="ynshtab">
 							<div class="chartvx" id="ch6" style="height:260px;width: 100%;"></div>
@@ -268,7 +264,7 @@
   })
   </script>
 
-<script type="text/javascript" src="js/echart_2_2_2.js"></script>
+<script type="text/javascript" src="js/echart_purchase_1.js"></script>
 
 
 </html>

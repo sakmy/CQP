@@ -1974,3 +1974,83 @@ border-radius: 0px 12px 12px 0px;*/
 .fz20{
 	font-size: 26px;
 }
+
+
+.hscroll{
+	height: 270px;
+	overflow: auto;
+}
+.demem_c_1{
+	background: #FFC600;
+}
+.demem_c_2{
+	background: #FE6200;
+}
+.top0{
+	top: 0 !important
+}
+.pb0{
+	padding-bottom: 0;
+}
+.h400{
+	height: 400px;
+}
+.disblocktype2{
+	display: block;
+	padding-top: 5px;
+}
+.disblocktype2 .pecimt{
+    display: flex;
+    flex-direction: inherit;
+    padding: 0;
+}
+.disblocktype2 .pecimt>span{
+flex: 1;
+}
+.disblocktype2 .chartvx{
+	margin: auto;
+	margin-top: 30px;
+}
+.type2.disblocktype2 .pecimt{
+	display: block;
+	zoom: 1;
+	overflow: hidden;
+}
+.type2.disblocktype2 .pecimt>span{
+	float: left;
+	flex: inherit;
+	width: 64px;
+}
+.type2.disblocktype2 .pecimt>span.w100{
+	width: 134px;
+}
+.top30{
+	top: 30px !important;position: relative;
+}
+.tb1_1{
+	width: 100px;
+	padding-right: 0;
+}
+.tb2_1{
+	width: 170px;
+	padding-right: 0;
+}
+.tb3_1{
+	width: 120px;
+	padding-right: 0;
+}
+.tb4_1{
+	width: 190px;
+	padding-right: 0;
+}
+.zfhsu.type2{
+	width: 77px;
+	height: 30px;
+	background: #D8E6FB;
+	box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.06);
+	border-radius: 15px;
+	
+}
+.h292{
+	height: 292px;
+}
