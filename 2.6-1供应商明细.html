@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+    <script src="libs/script/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      rev="stylesheet"
+      href="style/reset.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      rev="stylesheet"
+      href="style/global.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      rev="stylesheet"
+      href="style/index.css"
+      type="text/css"
+    />
+    <link href="libs/style/font-awesome.min.css" rel="stylesheet" />
+    <script type="text/javascript" src="js/echarts.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+
+
+    <link rel="stylesheet" href="js/el.css">
+    <!-- 引入组件库 -->
+    <script src="js/el1.js"></script>
+  </head>
+  <body>
+    <div class="loading"></div>
+    <div class="indexwa">
+      <div class="index">
+        <div class="" id="app">
+          <div class="header">
+            <div class="mebubtn">采购明细</div>
+            <div class="flex1"></div>
+            <div class="toptme">
+              <a href="" class="homeicon"
+                ><img src="images/ticon1.png" alt=""
+              /></a>
+              <span>2021年1月30日 | 14:23:34</span>
+            </div>
+            <div class="exit">
+              <img src="images/ticon2.png" alt="" />
+              退出登录
+            </div>
+
+            <div class="danwei">单位：亿</div>
+          </div>
+
+          <div class="content">
+            <div class="bigtabsz">
+              <div class="tabbox tabbox-js">
+                <div class="gsomc">公司名称</div>
+
+                <span class="tabsp tabsp1 tbbigsx" qie="0"
+                  ><div class="flex1"></div>
+                  <span>所有</span> <em class="fa fa-angle-down"></em
+                  ><em class="fa fa-angle-up"></em
+                ></span>
+
+                <div class="gsomc">年份</div>
+                <span class="tabsp tabsp2 tbbigsx" qie="1"
+                  ><div class="flex1"></div>
+                  <span>年份</span> <em class="fa fa-angle-down"></em
+                  ><em class="fa fa-angle-up"></em
+                ></span>
+
+                <div class="gsomc">月份</div>
+                <span class="tabsp tabsp2 tabsp2x tbbigsx" qie="2"
+                  ><div class="flex1"></div>
+                  <span>12月</span> <em class="fa fa-angle-down"></em
+                  ><em class="fa fa-angle-up"></em
+                ></span>
+
+                <div class="gsomc">是否关联交易</div>
+                <span class="tabsp tabsp2 tabsp2x tbbigsx" qie="3"
+                  ><div class="flex1"></div>
+                  <span>多选</span> <em class="fa fa-angle-down"></em
+                  ><em class="fa fa-angle-up"></em
+                ></span>
+
+                <div class="">
+                  <div class="tabla tabla2">
+                    <div class="tablain">
+                      <div class="tablaqie tablaqie2">
+                        <ul>
+                          <li class="cur">公司名称1</li>
+                          <li>公司名称2</li>
+                          <li>公司名称3</li>
+                          <li>公司名称4</li>
+                          <li>公司名称5</li>
+                          <li>公司名称6</li>
+                          <li>公司名称7</li>
+                          <li>公司名称8</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tabla tabla2">
+                    <div class="tablain">
+                      <div class="tablaqie tablaqie2">
+                        <ul>
+                          <li class="cur">2021年</li>
+                          <li>2020年</li>
+                          <li>2019年</li>
+                          <li>2018年</li>
+                          <li>2017年</li>
+                          <li>2016年</li>
+                          <li>2015年</li>
+                          <li>2014年</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="tabla tabla2">
+                    <div class="tablain">
+                      <div class="tablaqie tablaqie2">
+                        <ul>
+                          <li class="cur">1月</li>
+                          <li>2月</li>
+                          <li>3月</li>
+                          <li>4月</li>
+                          <li>5月</li>
+                          <li>6月</li>
+                          <li>7月</li>
+                          <li>8月</li>
+                          <li>9月</li>
+                          <li>10月</li>
+                          <li>11月</li>
+                          <li>12月</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="tabla tabla2">
+                    <div class="tablain">
+                      <div class="tablaqie tablaqie2">
+                        <ul>
+                          <li class="cur">是</li>
+                          <li>否</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bgrigct1 listtype2">
+              <div class="brritem">
+                <div class="brritem1">购进金额</div>
+                <div class="brritem2"><em>32.47</em></div>
+              </div>
+              <div class="brritem">
+                <div class="brritem1">同期购进金额</div>
+                <div class="brritem2"><em>32.94</em></div>
+              </div>
+              <div class="brritem">
+                <div class="brritem1">同比增长率</div>
+                <div class="brritem2"><em>-1.45</em>%</div>
+              </div>
+              <div class="brritem">
+                <div class="brritem1">年累计购进金额</div>
+                <div class="brritem2"><em>325.65</em></div>
+              </div>
+              <div class="brritem">
+                <div class="brritem1">同期年累计购进金额</div>
+                <div class="brritem2"><em>312.36</em></div>
+              </div>
+              <div class="brritem">
+                <div class="brritem1">年累计同比增长率</div>
+                <div class="brritem2"><em>4.25</em>%</div>
+              </div>
+            </div>
+            <div class="contin">
+              <div class="leftcont leftcont2cc">
+                <div class="cont cont1 cont1-h340">
+                  <div class="ctitle ctitle-mb0">
+                    <img src="images/acc.png" alt="" />三大市场供应商
+                  </div>
+                  <br />
+                  <div class="piedale">
+                    <div class="pecimt pecimt-sd">
+                      <span>三大市场</span>
+                      <span><em class="dpoie dpoie1"></em> 总部销售市场</span>
+                      <span><em class="dpoie dpoie2"></em> 南部销售市场</span>
+                      <span><em class="dpoie dpoie3"></em> 北部销售市场</span>
+                    </div>
+                    <div class=" ">
+                      <div class="ynshtab">
+                        <div
+                          class="chartvx"
+                          id="ch1"
+                          style="height: 200px; width: 280px"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cont cont1 cont1-h340">
+                  <div class="ctitle ctitle-mb0">
+                    <img src="images/icon-cglx@2x.png" alt="" />采购类型供应商数
+                  </div>
+                  <div class="piedale">
+                    <div class="pecimt pecimt-cg">
+                      <span>二级采购类型…</span>
+                      <span><em class="dpoie dpoie1"></em> 商购</span>
+                      <span><em class="dpoie dpoie2"></em> 纯购</span>
+                      <span><em class="dpoie dpoie3"></em> 空白</span>
+                      <span><em class="dpoie dpoie4"></em> 自然人</span>
+                      <span><em class="dpoie dpoie5"></em> 其他</span>
+                    </div>
+                    <div class=" ">
+                      <div class="ynshtab">
+                        <div
+                          class="chartvx"
+                          id="ch2"
+                          style="height: 200px; width: 280px"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bigright">
+                <div class="bgrigct2x mtop0">
+                  <div class="bgrsi3tm bgrsi3tm-h340 bgrsi3tm-w100">
+                    <div class="ctitle ctitle-mb0">
+                      <img src="images/shengji.png" alt="" /> 省市区供应商
+                      <div class="flex1"></div>
+                    </div>
+
+                    <div class="tblsct">
+                      <div class="ynshtab">
+                        <div
+                          class="chartvx"
+                          id="ch3"
+                          style="height: 260px; width: 100%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="bgrigct3x bgrigct3x-sv">
+                  <div class="vstable">
+                    <div class="elbtable">
+                       <el-table
+                        :data="tableData"
+                        style="width: 100%;margin-bottom: 20px;"
+                        row-key="id"
+                        border
+                        height="280"
+                        :tree-props="{children: 'children', hasChildren: 'hasChildren'}">
+                        <el-table-column
+                          prop="v1"
+                          label="产品大类"
+                          fixed
+
+                          width="184">
+                        </el-table-column>
+                        <el-table-column
+                          prop="v2"
+                          label="含税购进金额"
+
+                          width="220">
+                        </el-table-column>
+                        <el-table-column
+                          prop="v3"
+                          label="期末含税库存金额">
+                        </el-table-column>
+                      </el-table>
+                    </div>
+                    <div class="vnntba3">
+                      <table>
+                        <tbody>
+                          <tr>
+                            <td style="width: 184px;">
+                              <div class="tbtb  vtlab">
+                                <div class="zfhsu type2">总计</div>
+                              </div>
+                            </td>
+
+                            <td style="width: 220px;">
+                              <div class="tbtb vtlab ">
+                                <div class="shzs">324676.72</div>
+                              </div>
+                            </td>
+
+                            <td>
+                              <div class="tbtb vtlab ">
+                                <div class="shzs">324676.72</div>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+
+                  <div class="vstable">
+                    <div class="elbtable">
+                       <el-table
+                        :data="tableData1"
+                        style="width: 100%;margin-bottom: 20px;"
+                        row-key="id"
+                        border
+                        height="280"
+                        :tree-props="{children: 'children', hasChildren: 'hasChildren'}">
+                        <el-table-column
+                          prop="v1"
+                          label="供应商名称"
+                          fixed
+
+                          width="184">
+                        </el-table-column>
+                        <el-table-column
+                          prop="v2"
+                          label="含税购进金额"
+
+                          width="220">
+                        </el-table-column>
+                        <el-table-column
+                          prop="v3"
+                          label="期末含税库存金额">
+                        </el-table-column>
+                      </el-table>
+                    </div>
+                    <div class="vnntba3">
+                      <table>
+                        <tbody>
+                          <tr>
+                            <td style="width: 184px;">
+                              <div class="tbtb  vtlab">
+                                <div class="zfhsu type2">总计</div>
+                              </div>
+                            </td>
+
+                            <td style="width: 220px;">
+                              <div class="tbtb vtlab ">
+                                <div class="shzs">324676.72</div>
+                              </div>
+                            </td>
+
+                            <td>
+                              <div class="tbtb vtlab ">
+                                <div class="shzs">324676.72</div>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
+  <script type="text/javascript" src="js/jquery.countup.min.js"></script>
+
+  <script type="text/javascript">
+    var vm = new Vue({
+      el: "#app",
+      data: function(){
+        return {
+          tableData: [ {
+            id: 3,
+            v1: '日用品',
+            v2: '-34967.12',
+            v3: '1329.23',
+            children: [{
+                id: 31,
+                v1: '日用品',
+                v2: '-34967.12',
+                v3: '1329.23',
+              },{
+                id: 32,
+                v1: '日用品',
+                v2: '-34967.12',
+                v3: '1329.23',
+              },{
+                id: 33,
+                v1: '日用品',
+                v2: '-34967.12',
+                v3: '1329.23',
+              },]
+          }, {
+            id: 4,
+            v1: '日用品',
+            v2: '-34967.12',
+            v3: '1329.23',
+            children: [{
+                id: 34,
+                v1: '日用品',
+                v2: '-34967.12',
+                v3: '1329.23',
+              },{
+                id: 35,
+                v1: '日用品',
+                v2: '-34967.12',
+                v3: '1329.23',
+              },{
+                id: 36,
+                v1: '日用品',
+                v2: '-34967.12',
+                v3: '1329.23',
+              },]
+          },  {
+            id: 5,
+            v1: '日用品',
+            v2: '-34967.12',
+            v3: '1329.23',
+            children: [{
+                id: 37,
+                v1: '日用品',
+                v2: '-34967.12',
+                v3: '1329.23',
+              },{
+                id: 38,
+                v1: '日用品',
+                v2: '-34967.12',
+                v3: '1329.23',
+              },{
+                id: 39,
+                v1: '日用品',
+                v2: '-34967.12',
+                v3: '1329.23',
+              },]
+          }, {
+            id: 6,
+            v1: '日用品',
+            v2: '-34967.12',
+            v3: '1329.23',
+            children: [{
+                id: 40,
+                v1: '日用品',
+                v2: '-34967.12',
+                v3: '1329.23',
+              },{
+                id: 11,
+                v1: '日用品',
+                v2: '-34967.12',
+                v3: '1329.23',
+              },{
+                id: 12,
+                v1: '日用品',
+                v2: '-34967.12',
+                v3: '1329.23',
+              },]
+          }, {
+            id: 7,
+            v1: '日用品',
+            v2: '-34967.12',
+            v3: '1329.23',
+            children: [{
+                id: 13,
+                v1: '日用品',
+                v2: '-34967.12',
+                v3: '1329.23',
+              },{
+                id: 14,
+                v1: '日用品',
+                v2: '-34967.12',
+                v3: '1329.23',
+              },{
+                id: 15,
+                v1: '日用品',
+                v2: '-34967.12',
+                v3: '1329.23',
+              },]
+          }, ],tableData1: [ {
+            id: 3,
+            v1: '日用品',
+            v2: '-34967.12',
+            v3: '1329.23',
+
+          }, {
+            id: 4,
+            v1: '日用品',
+            v2: '-34967.12',
+            v3: '1329.23',
+
+          },  {
+            id: 5,
+            v1: '日用品',
+            v2: '-34967.12',
+            v3: '1329.23',
+
+          }, {
+            id: 6,
+            v1: '日用品',
+            v2: '-34967.12',
+            v3: '1329.23',
+
+          }, {
+            id: 7,
+            v1: '日用品',
+            v2: '-34967.12',
+            v3: '1329.23',
+
+          }, ],
+        }
+      },
+      mounted: function () {
+        $(".brritem2 em").countUp({
+          delay: 10,
+          time: 2000,
+        });
+      },
+    });
+  </script>
+
+  <script type="text/javascript" src="js/echart_2_6_1.js"></script>
+</html>

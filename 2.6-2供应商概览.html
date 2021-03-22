@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+    <script src="libs/script/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      rev="stylesheet"
+      href="style/reset.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      rev="stylesheet"
+      href="style/global.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      rev="stylesheet"
+      href="style/index.css"
+      type="text/css"
+    />
+    <link href="libs/style/font-awesome.min.css" rel="stylesheet" />
+    <script type="text/javascript" src="js/echarts.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+  </head>
+  <body>
+    <div class="loading"></div>
+    <div class="indexwa">
+      <div class="index">
+        <div class="" id="app">
+          <div class="header">
+            <div class="mebubtn">采购概览</div>
+            <div class="flex1"></div>
+            <div class="toptme">
+              <a href="" class="homeicon"
+                ><img src="images/ticon1.png" alt=""
+              /></a>
+              <span>2021年1月30日 | 14:23:34</span>
+            </div>
+            <div class="exit">
+              <img src="images/ticon2.png" alt="" />
+              退出登录
+            </div>
+
+            <div class="danwei">单位：亿</div>
+          </div>
+
+          <div class="content">
+            <div class="bigtabsz">
+              <div class="tabbox tabbox-js">
+                <div class="gsomc">公司名称</div>
+
+                <span class="tabsp tabsp1 tbbigsx" qie="0"
+                  ><div class="flex1"></div>
+                  <span>所有</span> <em class="fa fa-angle-down"></em
+                  ><em class="fa fa-angle-up"></em
+                ></span>
+
+                <div class="gsomc">年份</div>
+                <span class="tabsp tabsp2 tbbigsx" qie="1"
+                  ><div class="flex1"></div>
+                  <span>年份</span> <em class="fa fa-angle-down"></em
+                  ><em class="fa fa-angle-up"></em
+                ></span>
+
+                <div class="gsomc">月份</div>
+                <span class="tabsp tabsp2 tabsp2x tbbigsx" qie="2"
+                  ><div class="flex1"></div>
+                  <span>12月</span> <em class="fa fa-angle-down"></em
+                  ><em class="fa fa-angle-up"></em
+                ></span>
+
+                <div class="gsomc">是否关联交易</div>
+                <span class="tabsp tabsp2 tabsp2x tbbigsx" qie="3"
+                  ><div class="flex1"></div>
+                  <span>多选</span> <em class="fa fa-angle-down"></em
+                  ><em class="fa fa-angle-up"></em
+                ></span>
+
+                <div class="">
+                  <div class="tabla tabla2">
+                    <div class="tablain">
+                      <div class="tablaqie tablaqie2">
+                        <ul>
+                          <li class="cur">公司名称1</li>
+                          <li>公司名称2</li>
+                          <li>公司名称3</li>
+                          <li>公司名称4</li>
+                          <li>公司名称5</li>
+                          <li>公司名称6</li>
+                          <li>公司名称7</li>
+                          <li>公司名称8</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tabla tabla2">
+                    <div class="tablain">
+                      <div class="tablaqie tablaqie2">
+                        <ul>
+                          <li class="cur">2021年</li>
+                          <li>2020年</li>
+                          <li>2019年</li>
+                          <li>2018年</li>
+                          <li>2017年</li>
+                          <li>2016年</li>
+                          <li>2015年</li>
+                          <li>2014年</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="tabla tabla2">
+                    <div class="tablain">
+                      <div class="tablaqie tablaqie2">
+                        <ul>
+                          <li class="cur">1月</li>
+                          <li>2月</li>
+                          <li>3月</li>
+                          <li>4月</li>
+                          <li>5月</li>
+                          <li>6月</li>
+                          <li>7月</li>
+                          <li>8月</li>
+                          <li>9月</li>
+                          <li>10月</li>
+                          <li>11月</li>
+                          <li>12月</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="tabla tabla2">
+                    <div class="tablain">
+                      <div class="tablaqie tablaqie2">
+                        <ul>
+                          <li class="cur">是</li>
+                          <li>否</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bgrigct1 listtype2">
+              <div class="brritem">
+                <div class="brritem1">购进金额</div>
+                <div class="brritem2"><em>32.47</em></div>
+              </div>
+              <div class="brritem">
+                <div class="brritem1">同期购进金额</div>
+                <div class="brritem2"><em>32.94</em></div>
+              </div>
+              <div class="brritem">
+                <div class="brritem1">同比增长率</div>
+                <div class="brritem2"><em>-1.45</em>%</div>
+              </div>
+              <div class="brritem">
+                <div class="brritem1">年累计购进金额</div>
+                <div class="brritem2"><em>325.65</em></div>
+              </div>
+              <div class="brritem">
+                <div class="brritem1">同期年累计购进金额</div>
+                <div class="brritem2"><em>312.36</em></div>
+              </div>
+              <div class="brritem">
+                <div class="brritem1">年累计同比增长率</div>
+                <div class="brritem2"><em>4.25</em>%</div>
+              </div>
+            </div>
+            <div class="contin">
+              <div class="leftcont leftcont2cc">
+                <div class="cont cont1 h340">
+                  <div class="ctitle ctitle-mb0">
+                    <img src="images/youxiao.png" alt="" /> 有效供应商数
+                  </div>
+                  <div class="hscroll">
+                    <div
+                      class="chartvx"
+                      id="ch1"
+                      style="height: 240px; width: 100%"
+                    ></div>
+                  </div>
+                </div>
+                <div class="cont cont1 h340">
+                  <div class="ctitle ctitle-mb0">
+                    <img src="images/jiangpai.png" alt="" /> 有效供应商数
+                  </div>
+                  <div class="hscroll">
+                    <div
+                      class="chartvx"
+                      id="ch2"
+                      style="height: 320px; width: 100%"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+              <div class="bigright">
+                <div class="bgrigct2x mtop0">
+                  <div class="bgrigct2xa h704">
+                    <div class="ctitle ctitle-mb0">
+                      <img src="images/youxiao.png" alt="" /> 供应商分布
+                      <div class="flex1"></div>
+
+                    </div>
+
+                    <div class="dituwa dituwam">
+                      <div class="ditu">
+
+                        <img src="images/ditu2.png" alt="" />
+                        <div id="xIcon">
+                           <div :class=" 'dituk '+ 'dituk'  +item" v-for="item in iconList1">
+                          <div class="ditubg"></div>
+                          <div class="dituicon">
+                            <em></em>
+                            <em class="icondian"></em><div class="ditutan ditutan-big">
+                              <div class="titutl">
+                                省级平台公司（重庆）
+                              </div>
+                              <div class="tmsndl">
+                                <div class="tmsndlin">
+                                  <div class="tinemttm">
+                                    <div class="tinemttm1">公司数量</div>
+                                    <div class="tinemttm2">2 <em>家</em></div>
+                                  </div>
+                                </div>
+                                <div class="tmsndlin">
+                                  <div class="tinemttm">
+                                    <div class="tinemttm1">门店数量</div>
+                                    <div class="tinemttm2">2 <em>个</em></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="ttnbl">
+                                <div class="ttnblin">
+                                  <div class="dwjsl1">
+                                    <span class="desns2">营业收入</span>
+                                    <span class="desns1">56445.54</span>
+                                  </div>
+                                  <div class="jindwa jindwa1">
+                                    <div class="jinduin"></div>
+                                  </div>
+                                </div>
+                                <div class="ttnblin">
+                                  <div class="dwjsl1">
+                                    <span class="desns2">利润总额</span>
+                                    <span class="desns1">45.54</span>
+                                  </div>
+                                  <div class="jindwa jindwa1">
+                                    <div class="jinduin"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+                  <div class="vwtabe">
+                    <div class="bgrigct2xb h340">
+                      <div class="ctitle">
+                        <img src="images/jiangpai.png" alt="" /> 购进金额排名
+                      </div>
+
+                      <div
+                        class="chartvx"
+                        id="ch5"
+                        style="height: 250px; width: 100%"
+                      ></div>
+                    </div>
+                    <div class="bgrigct2xb h340 bgrigct2xb-mt22">
+                      <div class="ctitle">
+                        <img src="images/jiangpai.png" alt="" /> 销售额排名
+                      </div>
+
+                      <div
+                        class="chartvx"
+                        id="ch6"
+                        style="height: 250px; width: 100%"
+                      ></div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
+  <script type="text/javascript" src="js/jquery.countup.min.js"></script>
+
+  <script type="text/javascript">
+    var vm = new Vue({
+      el: "#app",
+      data: function(){
+        return {
+          iconList1: [
+          1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31
+          ]
+        }
+      },
+      mounted: function () {
+        $(".brritem2 em").countUp({
+          delay: 10,
+          time: 2000,
+        });
+      },
+    });
+  </script>
+
+  <script type="text/javascript" src="js/echart_2_6_2.js"></script>
+</html>
