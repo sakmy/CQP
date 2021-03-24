@@ -33,12 +33,14 @@ $(function() {
   })
 
 
-  $(".tabbox span").click(function(){
-    $(this).toggleClass("cur").siblings().removeClass("cur");
+  $(".tabbox span").not(".tabsp1xn").click(function(){
+    $(this).toggleClass("cur").siblings().not(".tabsp1xn").removeClass("cur");
    var x = $(this).index();
    $(this).parents(".contzhong").find('.ditu').eq(x).show().siblings().hide();
   })
-
+  $(".tabbox span.tabsp1xn").click(function(){
+    $(this).toggleClass("cur").siblings().removeClass("cur");
+  })
   $(".tablaqie>ul>li").click(function(){
      $(this).addClass("cur").siblings().removeClass("cur");
      var obj = $(this).parents('.tablaqie').find('li.cur');
