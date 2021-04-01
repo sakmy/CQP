@@ -206,7 +206,7 @@ window.onload = function() {
     },
     grid: {
       left: '5%',
-      top: '8%',
+      top: '12%',
       right: '4%',
       bottom: '15%',
       containLabel: false
@@ -510,9 +510,9 @@ window.onload = function() {
   ch4.setOption(op2);
   ch5.setOption(op1);
   ch6.setOption(op2);
-  //ch7.setOption(op3);
+  // //ch7.setOption(op3);
   ch8.setOption(op4);
-  //ch9.setOption(op5);
+  // //ch9.setOption(op5);
   ch10.setOption(op6);
   ch11.setOption(op6);
 
