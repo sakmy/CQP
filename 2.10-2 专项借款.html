@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+    <script src="libs/script/jquery.min.js"></script>
+    <link rel="stylesheet" rev="stylesheet" href="style/reset.css" type="text/css" />
+    <link rel="stylesheet" rev="stylesheet" href="style/global.css" type="text/css" />
+    <link rel="stylesheet" rev="stylesheet" href="style/index.css" type="text/css" />
+    <link href="libs/style/font-awesome.min.css" rel="stylesheet">
+    <script type="text/javascript" src="js/echarts.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <link rel="stylesheet" href="js/el.css">
+    <!-- 引入组件库 -->
+    <script src="js/el1.js"></script>
+  </head>
+  <body>
+    <div class="loading"></div>
+    <div class="indexwa">
+      <div class="index">
+        <div class="" id="app">
+          <div class="header">
+            <div class="mebubtn">
+              专项借款
+            </div>
+            <div class="flex1"></div>
+            <div class="toptme">
+              <a href="" class="homeicon"><img src="images/ticon1.png" alt="" /></a>
+              <span>2021年1月30日 | 14:23:34</span>
+            </div>
+            <div class ="exit">
+              <img src="images/ticon2.png" alt="" />
+              退出登录
+            </div>
+
+            <div class="danwei">
+              单位：亿
+            </div>
+          </div>
+
+          <div class="content">
+            <div class="bigtabsz type4">
+              <div class="tabbox tabbox-js">
+
+                 <div class="gsomc">公司名称</div>
+
+
+                  <span class="tabsp tabsp1 tbbigsx tbbigsx0" qie="0"><div class="flex1"></div><span>所有</span> <em class="fa fa-angle-down"></em><em class="fa fa-angle-up"></em></span>
+                  <b class="w38"></b>
+                  <div class="gsomc">年份</div>
+                  <span class="tabsp tabsp2 tbbigsx w160" qie="1"><div class="flex1"></div><span>年份</span> <em class="fa fa-angle-down"></em><em class="fa fa-angle-up"></em></span>
+                  <b class="w38"></b>
+                   <div class="gsomc">月份</div>
+                  <span class="tabsp tabsp2 tabsp2x tbbigsx w160" qie="2"><div class="flex1"></div><span>12月</span> <em class="fa fa-angle-down"></em><em class="fa fa-angle-up"></em></span>
+                  <b class="w38"></b>
+                   <div class="gsomc">项目名称</div>
+                  <span class="tabsp tabsp2 tabsp2x tbbigsx w531" qie="3"><div class="flex1"></div><span>多选</span> <em class="fa fa-angle-down"></em><em class="fa fa-angle-up"></em></span>
+
+
+
+
+                  <div class="">
+                    <div class="tabla tabla2">
+                      <div class="tablain">
+                        <div class="tablaqie tablaqie2">
+                          <ul>
+                            <li class="cur">公司名称1</li>
+                            <li  >公司名称2</li>
+                            <li  >公司名称3</li>
+                            <li  >公司名称4</li>
+                            <li  >公司名称5</li>
+                            <li  >公司名称6</li>
+                            <li  >公司名称7</li>
+                            <li  >公司名称8</li>
+
+
+                          </ul>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tabla tabla2">
+                      <div class="tablain">
+                        <div class="tablaqie tablaqie2">
+                          <ul>
+                            <li class="cur">2021年</li>
+                            <li  >2020年</li>
+                            <li  >2019年</li>
+                            <li  >2018年</li>
+                            <li  >2017年</li>
+                            <li  >2016年</li>
+                            <li  >2015年</li>
+                            <li  >2014年</li>
+
+
+                          </ul>
+
+                        </div>
+                      </div>
+                    </div>
+
+
+
+
+                     <div class="tabla tabla2">
+                      <div class="tablain">
+                        <div class="tablaqie tablaqie2">
+                          <ul>
+                            <li class="cur">1月</li>
+                            <li  >2月</li>
+                            <li  >3月</li>
+                            <li  >4月</li>
+                            <li  >5月</li>
+                            <li  >6月</li>
+                            <li  >7月</li>
+                            <li  >8月</li>
+                            <li  >9月</li>
+                            <li  >10月</li>
+                            <li  >11月</li>
+                            <li  >12月</li>
+
+                          </ul>
+
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="tabla tabla2">
+                      <div class="tablain">
+                        <div class="tablaqie tablaqie2">
+                          <ul>
+                            <li class="cur">是</li>
+                            <li  >否</li>
+
+
+                          </ul>
+
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                  </div>
+                </div>
+            </div>
+            <div class="contin">
+              <div class="leftcont leftcont2cc">
+                
+                <div class="cont contx1 mtop0 h412">
+                  <div class="ctitle ctitle-mb0"><img src="images/jiangpai.png" alt="" /> 公司借款排名</div>
+                  <div class=" ">
+
+                      <div class=" ">
+                        <div class="ynshtab">
+                        <div class="chartvx" id="ch2" style="height: 330px;width: 100%;"></div>
+                        </div>
+
+                      </div>
+                    </div>
+                </div>
+                <div class="cont contx1 h412">
+                  <div class="ctitle ctitle-mb0"><img src="images/jiangpai.png" alt="" /> 公司销售排名</div>
+                  <div class="chartvx" id="ch1" style="height: 330px;width: 100%;"></div>
+                </div>
+
+
+
+
+              </div>
+              <div class="bigright">
+                
+                <div class=" bgrigct2x mt40  cont3">
+                  <div class="bgrigct2xa  h370 pa0 cont">
+                     <div class="tabtitle tabtitlex w385 type2">
+                        <span class="cur">销售月度分析</span> 
+                        <span class="">销售月度利润分析</span> 
+                     </div>
+                     <div class="cont3in type2">
+                      <div class="tabDiv">
+                        <div class="csitem top0">
+                          <span class="ml60"><em class="demem demem1"></em>无税销售额</span> 
+                          <span class="ml60"><em class="demem demem2"></em>同期无税销售额</span> 
+                          <span class="ml60"><em class="demem demem3_1"></em>无税销售额同比增长率</span>
+                        </div>
+                        <div class="tblsct ">
+                          <div class="ynshtab">
+                            <div class="chartvx" id="ch4" style="height: 310px;width: 100%;"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tabDiv">
+                        <div class="csitem top0">
+                          <span class="ml60"><em class="demem demem1"></em>无税销售额</span> 
+                          <span class="ml60"><em class="demem demem2"></em>同期无税销售额</span> 
+                          <span class="ml60"><em class="demem demem3_1"></em>无税销售额同比增长率</span>
+                        </div>
+                        <div class="tblsct ">
+                          <div class="ynshtab">
+                            <div class="chartvx" id="ch4_1" style="height: 310px;width: 100%;"></div>
+                          </div>
+                        </div>
+                      </div>
+                     </div>
+
+
+                  </div>
+
+                  <div class="bgrigct2xb   h370   pa0 cont">
+                     <div class="tabtitle tabtitlex  type2">
+                        <span class="cur">公司总项目数</span> 
+                        <span class="">公司完成项目数</span> 
+                     </div>
+                     <div class="cont3in type2">
+                      <div class="tabDiv">
+                        <div class="tblsct ">
+                          <div class="ynshtab">
+                            <div class="chartvx" id="ch5" style="height: 310px;width: 100%;"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tabDiv">
+                        <div class="tblsct ">
+                          <div class="ynshtab">
+                            <div class="chartvx" id="ch5_1" style="height: 310px;width: 100%;"></div>
+                          </div>
+                        </div>
+                      </div>
+                     </div>
+
+
+                  </div>
+                </div>
+                <div class="bgrigct3x h412">
+                  <div class="vnntba1 elem">
+                    <el-table
+                      :data="tableData"
+                      style="width: 1386px"
+                      height="390">
+                      <el-table-column
+                        fixed
+                        prop="date"
+                        label="公司简称"
+                        width="180">
+                      </el-table-column>
+                      <el-table-column
+                        fixed
+                        prop="name"
+                        label="项目名称"
+                        width="150">
+                      </el-table-column>
+                      <el-table-column
+                        prop="province"
+                        label="医疗机构"
+                        width="250">
+                      </el-table-column>
+                      <el-table-column
+                        prop="city"
+                        label="批准时间"
+                        width="200">
+                      </el-table-column>
+                      <el-table-column
+                        prop="start"
+                        label="启动时间"
+                        width="140">
+                      </el-table-column>
+                      <el-table-column
+                        prop="end"
+                        label="结束时间"
+                        width="240">
+                      </el-table-column>
+                      <el-table-column
+                        prop="sol"
+                        label="目标销售金额"
+                        width="300">
+                      </el-table-column>
+                    </el-table>
+                  </div>
+
+
+
+
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+
+<script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
+<script type="text/javascript" src="js/jquery.countup.min.js"></script>
+
+
+  <script type="text/javascript">
+  var vm = new Vue({
+
+    el: "#app",
+    mounted: function(){
+      $(".countnum").countUp({
+        delay: 10,
+        time: 2000
+      });
+    },
+    data() {
+      return {
+        tableData: [{
+          date: '重药器械',
+          name: '鄂江汉设备',
+          province: 'TC3-1(四小轮)',
+          city: '武汉市江汉医疗制…',
+          start: '台',
+          end: 'CR担架推床',
+          sol: 'CR担架推床'
+        },{
+          date: '重药器械',
+          name: '鄂江汉设备',
+          province: 'TC3-1(四小轮)',
+          city: '武汉市江汉医疗制…',
+          start: '台',
+          end: 'CR担架推床',
+          sol: 'CR担架推床'
+        },{
+          date: '重药器械',
+          name: '鄂江汉设备',
+          province: 'TC3-1(四小轮)',
+          city: '武汉市江汉医疗制…',
+          start: '台',
+          end: 'CR担架推床',
+          sol: 'CR担架推床'
+        },{
+          date: '重药器械',
+          name: '鄂江汉设备',
+          province: 'TC3-1(四小轮)',
+          city: '武汉市江汉医疗制…',
+          start: '台',
+          end: 'CR担架推床',
+          sol: 'CR担架推床'
+        },{
+          date: '重药器械',
+          name: '鄂江汉设备',
+          province: 'TC3-1(四小轮)',
+          city: '武汉市江汉医疗制…',
+          start: '台',
+          end: 'CR担架推床',
+          sol: 'CR担架推床'
+        },{
+          date: '重药器械',
+          name: '鄂江汉设备',
+          province: 'TC3-1(四小轮)',
+          city: '武汉市江汉医疗制…',
+          start: '台',
+          end: 'CR担架推床',
+          sol: 'CR担架推床'
+        },{
+          date: '重药器械',
+          name: '鄂江汉设备',
+          province: 'TC3-1(四小轮)',
+          city: '武汉市江汉医疗制…',
+          start: '台',
+          end: 'CR担架推床',
+          sol: 'CR担架推床'
+        },{
+          date: '重药器械',
+          name: '鄂江汉设备',
+          province: 'TC3-1(四小轮)',
+          city: '武汉市江汉医疗制…',
+          start: '台',
+          end: 'CR担架推床',
+          sol: 'CR担架推床'
+        },{
+          date: '重药器械',
+          name: '鄂江汉设备',
+          province: 'TC3-1(四小轮)',
+          city: '武汉市江汉医疗制…',
+          start: '台',
+          end: 'CR担架推床',
+          sol: 'CR担架推床'
+        },{
+          date: '重药器械',
+          name: '鄂江汉设备',
+          province: 'TC3-1(四小轮)',
+          city: '武汉市江汉医疗制…',
+          start: '台',
+          end: 'CR担架推床',
+          sol: 'CR担架推床'
+        },{
+          date: '重药器械',
+          name: '鄂江汉设备',
+          province: 'TC3-1(四小轮)',
+          city: '武汉市江汉医疗制…',
+          start: '台',
+          end: 'CR担架推床',
+          sol: 'CR担架推床'
+        },{
+          date: '重药器械',
+          name: '鄂江汉设备',
+          province: 'TC3-1(四小轮)',
+          city: '武汉市江汉医疗制…',
+          start: '台',
+          end: 'CR担架推床',
+          sol: 'CR担架推床'
+        },{
+          date: '重药器械',
+          name: '鄂江汉设备',
+          province: 'TC3-1(四小轮)',
+          city: '武汉市江汉医疗制…',
+          start: '台',
+          end: 'CR担架推床',
+          sol: 'CR担架推床'
+        }
+        ]
+      }
+    }
+
+
+  });
+  </script>
+
+<script type="text/javascript" src="js/echart_2_5_zx.js"></script>
+
+
+</html>

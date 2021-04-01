@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+    <script src="libs/script/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      rev="stylesheet"
+      href="style/reset.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      rev="stylesheet"
+      href="style/global.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      rev="stylesheet"
+      href="style/index.css"
+      type="text/css"
+    />
+    <link href="libs/style/font-awesome.min.css" rel="stylesheet" />
+    <script type="text/javascript" src="js/echarts.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+  </head>
+  <body>
+    <div class="loading"></div>
+    <div class="indexwa">
+      <div class="index">
+        <div class="" id="app">
+          <div class="header">
+            <div class="mebubtn">采购概览</div>
+            <div class="flex1"></div>
+            <div class="toptme">
+              <a href="" class="homeicon"
+                ><img src="images/ticon1.png" alt=""
+              /></a>
+              <span>2021年1月30日 | 14:23:34</span>
+            </div>
+            <div class="exit">
+              <img src="images/ticon2.png" alt="" />
+              退出登录
+            </div>
+
+            <div class="danwei">单位：亿</div>
+          </div>
+
+          <div class="content">
+            <div class="bigtabsz">
+              <div class="tabbox tabbox-js">
+                <div class="gsomc">公司名称</div>
+
+                <span class="tabsp tabsp1 tbbigsx" qie="0"
+                  ><div class="flex1"></div>
+                  <span>所有</span> <em class="fa fa-angle-down"></em
+                  ><em class="fa fa-angle-up"></em
+                ></span>
+
+                <div class="gsomc">年份</div>
+                <span class="tabsp tabsp2 tbbigsx" qie="1"
+                  ><div class="flex1"></div>
+                  <span>年份</span> <em class="fa fa-angle-down"></em
+                  ><em class="fa fa-angle-up"></em
+                ></span>
+
+                <div class="gsomc">月份</div>
+                <span class="tabsp tabsp2 tabsp2x tbbigsx" qie="2"
+                  ><div class="flex1"></div>
+                  <span>12月</span> <em class="fa fa-angle-down"></em
+                  ><em class="fa fa-angle-up"></em
+                ></span>
+
+                <div class="gsomc">是否关联交易</div>
+                <span class="tabsp tabsp2 tabsp2x tbbigsx" qie="3"
+                  ><div class="flex1"></div>
+                  <span>多选</span> <em class="fa fa-angle-down"></em
+                  ><em class="fa fa-angle-up"></em
+                ></span>
+
+                <div class="">
+                  <div class="tabla tabla2">
+                    <div class="tablain">
+                      <div class="tablaqie tablaqie2">
+                        <ul>
+                          <li class="cur">公司名称1</li>
+                          <li>公司名称2</li>
+                          <li>公司名称3</li>
+                          <li>公司名称4</li>
+                          <li>公司名称5</li>
+                          <li>公司名称6</li>
+                          <li>公司名称7</li>
+                          <li>公司名称8</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tabla tabla2">
+                    <div class="tablain">
+                      <div class="tablaqie tablaqie2">
+                        <ul>
+                          <li class="cur">2021年</li>
+                          <li>2020年</li>
+                          <li>2019年</li>
+                          <li>2018年</li>
+                          <li>2017年</li>
+                          <li>2016年</li>
+                          <li>2015年</li>
+                          <li>2014年</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="tabla tabla2">
+                    <div class="tablain">
+                      <div class="tablaqie tablaqie2">
+                        <ul>
+                          <li class="cur">1月</li>
+                          <li>2月</li>
+                          <li>3月</li>
+                          <li>4月</li>
+                          <li>5月</li>
+                          <li>6月</li>
+                          <li>7月</li>
+                          <li>8月</li>
+                          <li>9月</li>
+                          <li>10月</li>
+                          <li>11月</li>
+                          <li>12月</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="tabla tabla2">
+                    <div class="tablain">
+                      <div class="tablaqie tablaqie2">
+                        <ul>
+                          <li class="cur">是</li>
+                          <li>否</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="contin">
+              <div class="leftcont leftcont2cc">
+                <div class="cont cont1" style="height: 398px">
+                  <div class="ctitle ctitle-mb0">
+                    <img src="images/chubei.png" alt="" /> 公司储备品规数
+                  </div>
+                  <div class="">
+                    <div class="csitem top0">
+                      <span><em class="demem demem_c_1"></em>地方储备</span>
+                      <span><em class="demem demem_c_2"></em>中央储备</span>
+                      <span><em class="demem demem_c_3"></em>专项储备</span>
+                      <div class="flex1"></div>
+                    </div>
+                  </div>
+                  <div class="hscroll">
+                    <div
+                      class="chartvx"
+                      id="ch1"
+                      style="height: 370px; width: 100%"
+                    ></div>
+                  </div>
+                </div>
+                <div class="cont cont1 h340" style="height: 398px">
+                  <div class="ctitle ctitle-mb0">
+                    <img src="images/chubei.png" alt="" /> 公司储备缺货品规数
+                  </div>
+                  <div class="">
+                    <div class="csitem top0">
+                      <span><em class="demem demem_c_1"></em>地方储备</span>
+                      <span><em class="demem demem_c_2"></em>中央储备</span>
+                      <span><em class="demem demem_c_3"></em>专项储备</span>
+                      <div class="flex1"></div>
+                    </div>
+                  </div>
+                  <div class="hscroll">
+                    <div
+                      class="chartvx"
+                      id="ch2"
+                      style="height: 370px; width: 100%"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+              <div class="bigright">
+                <div class="bgrigct2x mtop0">
+                  <div
+                    class="bgrigct2xa h340"
+                    style="width: 786px; height: 398px"
+                  >
+                    <div class="ctitle ctitle-mb0">
+                      <img src="images/chubei.png" alt="" /> 储备达成
+                      <div class="flex1"></div>
+                      <div class="csitem top0">
+                        <span><em class="demem demem_c_1"></em>储备计划量</span>
+                        <span><em class="demem demem_c_2"></em>储备库存量</span>
+                        <span
+                          ><em class="demem demem_c_3"></em
+                          >含税销售额同比增长率</span
+                        >
+                      </div>
+                    </div>
+
+                    <div class="tblsct">
+                      <div class="ynshtab">
+                        <div
+                          class="chartvx"
+                          id="ch4"
+                          style="height: 360px; width: 100%"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="bgrigct2xb" style="width: 576px; height: 398px">
+                    <div class="ctitle">
+                      <img src="images/qushi.png" alt="" /> 储备类型占比
+                    </div>
+
+                    <div
+                      class="chartvx"
+                      id="ch5"
+                      style="height: 310px; width: 100%"
+                    ></div>
+                  </div>
+                </div>
+
+                <div class="bgrigct2" style="height: 398px">
+                  <div class="vnntba1">
+                    <table>
+                      <tr>
+                        <th><div class="tbtb tbxw1">公司简称</div></th>
+                        <th><div class="tbtb tbxw2">储备序号</div></th>
+                        <th><div class="tbtb tbxw3">通用名</div></th>
+                        <th><div class="tbtb tbxw4">规格</div></th>
+                        <th><div class="tbtb tbxw5">计量单位</div></th>
+                        <th><div class="tbtb tbxw6">产牌简称</div></th>
+                        <th><div class="tbtb tbxw7">储备库存量</div></th>
+                        <th><div class="tbtb tbxw8">储备计划量</div></th>
+                        <th><div class="tbtb tbxw9">储备差异量</div></th>
+
+
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="vnntba2wa vnntba2wa-w" >
+                    <div class="cegund" style="width: 961px;">
+                      <div class="ceduwkul tbxw1">
+                        <ul>
+                          <li>
+                            <div class="fuji">重药器械</div>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="ceduwkul tbxw2">
+                        <ul>
+                          <li>
+                            <div class="fuji">1417</div>
+                            <div class="erji">
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                            </div>
+                          </li><li>
+                            <div class="fuji">1417</div>
+                            <div class="erji">
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                            </div>
+                          </li><li>
+                            <div class="fuji">1417</div>
+                            <div class="erji">
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                            </div>
+                          </li><li>
+                            <div class="fuji">1417</div>
+                            <div class="erji">
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                            </div>
+                          </li><li>
+                            <div class="fuji">1417</div>
+                            <div class="erji">
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                            </div>
+                          </li><li>
+                            <div class="fuji">1417</div>
+                            <div class="erji">
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                            </div>
+                          </li><li>
+                            <div class="fuji">1417</div>
+                            <div class="erji">
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                              <div class="erjwz">中国人民解放军陆军军医…1</div>
+                            </div>
+                          </li>
+
+                        </ul>
+                      </div>
+                      <div class="ceduwkul tbxw3">
+                        <ul>
+                          <li>
+                            <div class="fuji">医用纱布块灭菌型不带</div>
+                            <div class="erji">
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                            </div>
+                          </li><li>
+                            <div class="fuji">医用纱布块灭菌型不带</div>
+                            <div class="erji">
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                            </div>
+                          </li><li>
+                            <div class="fuji">医用纱布块灭菌型不带</div>
+                            <div class="erji">
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                            </div>
+                          </li><li>
+                            <div class="fuji">医用纱布块灭菌型不带</div>
+                            <div class="erji">
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                            </div>
+                          </li><li>
+                            <div class="fuji">医用纱布块灭菌型不带</div>
+                            <div class="erji">
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                            </div>
+                          </li><li>
+                            <div class="fuji">医用纱布块灭菌型不带</div>
+                            <div class="erji">
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                            </div>
+                          </li><li>
+                            <div class="fuji">医用纱布块灭菌型不带</div>
+                            <div class="erji">
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                            </div>
+                          </li><li>
+                            <div class="fuji">医用纱布块灭菌型不带</div>
+                            <div class="erji">
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                            </div>
+                          </li>
+
+                        </ul>
+                      </div>
+                      <div class="ceduwkul tbxw4">
+                        <ul>
+                          <li>
+                            <div class="fuji">7*90cm-8p S-s</div>
+                            <div class="erji">
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                            </div>
+                          </li><li>
+                            <div class="fuji">7*90cm-8p S-s</div>
+                            <div class="erji">
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                            </div>
+                          </li><li>
+                            <div class="fuji">7*90cm-8p S-s</div>
+                            <div class="erji">
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                            </div>
+                          </li><li>
+                            <div class="fuji">7*90cm-8p S-s</div>
+                            <div class="erji">
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                            </div>
+                          </li><li>
+                            <div class="fuji">7*90cm-8p S-s</div>
+                            <div class="erji">
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                            </div>
+                          </li><li>
+                            <div class="fuji">7*90cm-8p S-s</div>
+                            <div class="erji">
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                            </div>
+                          </li><li>
+                            <div class="fuji">7*90cm-8p S-s</div>
+                            <div class="erji">
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                            </div>
+                          </li><li>
+                            <div class="fuji">7*90cm-8p S-s</div>
+                            <div class="erji">
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                            </div>
+                          </li>
+
+                        </ul>
+                      </div>
+                      <div class="ceduwkul tbxw5">
+                        <ul>
+                          <li>
+                            <div class="fuji">片 </div>
+                            <div class="erji">
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                            </div>
+                          </li><li>
+                            <div class="fuji">片 </div>
+                            <div class="erji">
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                            </div>
+                          </li><li>
+                            <div class="fuji">片 </div>
+                            <div class="erji">
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                            </div>
+                          </li><li>
+                            <div class="fuji">片 </div>
+                            <div class="erji">
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                            </div>
+                          </li><li>
+                            <div class="fuji">片 </div>
+                            <div class="erji">
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                            </div>
+                          </li><li>
+                            <div class="fuji">片 </div>
+                            <div class="erji">
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                            </div>
+                          </li><li>
+                            <div class="fuji">片 </div>
+                            <div class="erji">
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                            </div>
+                          </li><li>
+                            <div class="fuji">片 </div>
+                            <div class="erji">
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                              <div class="erjwz">客户纯销…1</div>
+                            </div>
+                          </li>
+
+                        </ul>
+                      </div>
+                       <div class="ceduwkul tbxw6">
+                         <div class="" style="line-height: 32px;">- </div>
+                         <div class="" style="line-height: 32px;">- </div>
+                         <div class="" style="line-height: 32px;">- </div>
+                         <div class="" style="line-height: 32px;">- </div>
+                         <div class="" style="line-height: 32px;">- </div>
+                         <div class="" style="line-height: 32px;">- </div>
+                         <div class="" style="line-height: 32px;">- </div>
+                         <div class="" style="line-height: 32px;">- </div>
+                         <div class="" style="line-height: 32px;">- </div>
+                         <div class="" style="line-height: 32px;">- </div>
+                         <div class="" style="line-height: 32px;">- </div>
+                         <div class="" style="line-height: 32px;">- </div>
+                         <div class="" style="line-height: 32px;">- </div>
+                         <div class="" style="line-height: 32px;">- </div>
+                         <div class="" style="line-height: 32px;">- </div>
+                         <div class="" style="line-height: 32px;">- </div>
+                         <div class="" style="line-height: 32px;">- </div>
+                         <div class="" style="line-height: 32px;">- </div>
+                         <div class="" style="line-height: 32px;">- </div>
+                         <div class="" style="line-height: 32px;">- </div>
+                         <div class="" style="line-height: 32px;">- </div>
+                         <div class="" style="line-height: 32px;">- </div>
+                      </div>
+
+
+
+                    </div>
+                    <div class="vnntba2 vnntba2-w">
+                      <table>
+                        <tr>
+                          <td><div class="tbtb tbxw7">10800.00</div></td>
+                          <td><div class="tbtb tbxw8">10800.00</div></td>
+                          <td><div class="tbtb tbxw9"><span class="dswgw">-0.85</span></div></td>
+
+                        </tr><tr>
+                          <td><div class="tbtb tbxw7">10800.00</div></td>
+                          <td><div class="tbtb tbxw8">10800.00</div></td>
+                          <td><div class="tbtb tbxw9"><span class="dswgw">-0.85</span></div></td>
+
+                        </tr><tr>
+                          <td><div class="tbtb tbxw7">10800.00</div></td>
+                          <td><div class="tbtb tbxw8">10800.00</div></td>
+                          <td><div class="tbtb tbxw9"><span class="dswgw">-0.85</span></div></td>
+
+                        </tr><tr>
+                          <td><div class="tbtb tbxw7">10800.00</div></td>
+                          <td><div class="tbtb tbxw8">10800.00</div></td>
+                          <td><div class="tbtb tbxw9"><span class="dswgw">-0.85</span></div></td>
+
+                        </tr><tr>
+                          <td><div class="tbtb tbxw7">10800.00</div></td>
+                          <td><div class="tbtb tbxw8">10800.00</div></td>
+                          <td><div class="tbtb tbxw9"><span class="dswgw">-0.85</span></div></td>
+
+                        </tr><tr>
+                          <td><div class="tbtb tbxw7">10800.00</div></td>
+                          <td><div class="tbtb tbxw8">10800.00</div></td>
+                          <td><div class="tbtb tbxw9"><span class="dswgw">-0.85</span></div></td>
+
+                        </tr><tr>
+                          <td><div class="tbtb tbxw7">10800.00</div></td>
+                          <td><div class="tbtb tbxw8">10800.00</div></td>
+                          <td><div class="tbtb tbxw9"><span class="dswgw">-0.85</span></div></td>
+
+                        </tr><tr>
+                          <td><div class="tbtb tbxw7">10800.00</div></td>
+                          <td><div class="tbtb tbxw8">10800.00</div></td>
+                          <td><div class="tbtb tbxw9"><span class="dswgw">-0.85</span></div></td>
+
+                        </tr><tr>
+                          <td><div class="tbtb tbxw7">10800.00</div></td>
+                          <td><div class="tbtb tbxw8">10800.00</div></td>
+                          <td><div class="tbtb tbxw9"><span class="dswgw">-0.85</span></div></td>
+
+                        </tr><tr>
+                          <td><div class="tbtb tbxw7">10800.00</div></td>
+                          <td><div class="tbtb tbxw8">10800.00</div></td>
+                          <td><div class="tbtb tbxw9"><span class="dswgw">-0.85</span></div></td>
+
+                        </tr><tr>
+                          <td><div class="tbtb tbxw7">10800.00</div></td>
+                          <td><div class="tbtb tbxw8">10800.00</div></td>
+                          <td><div class="tbtb tbxw9"><span class="dswgw">-0.85</span></div></td>
+
+                        </tr><tr>
+                          <td><div class="tbtb tbxw7">10800.00</div></td>
+                          <td><div class="tbtb tbxw8">10800.00</div></td>
+                          <td><div class="tbtb tbxw9"><span class="dswgw">-0.85</span></div></td>
+
+                        </tr>
+
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
+  <script type="text/javascript" src="js/jquery.countup.min.js"></script>
+
+  <script type="text/javascript">
+    var vm = new Vue({
+      el: "#app",
+      mounted: function () {
+        $(".brritem2 em").countUp({
+          delay: 10,
+          time: 2000,
+        });
+      },
+    });
+  </script>
+
+  <script type="text/javascript" src="js/echart_2_9.js"></script>
+</html>
