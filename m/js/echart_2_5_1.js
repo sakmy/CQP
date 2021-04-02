@@ -26,15 +26,16 @@ window.onload = function() {
       containLabel: true
     },
     xAxis: {
-      type: 'value',
+      type: 'category',
+      data: [  '自然人 ' ,'纯购','商购','其他'],
       boundaryGap: [0, 0.01]
     },
     yAxis: {
       axisLabel:{
 
       },
-      type: 'category',
-      data: [  '自然人 ' ,'纯购','商购','其他']
+      type: 'value',
+
     },
     series: [{
       name: '2011年',
@@ -42,9 +43,9 @@ window.onload = function() {
       data: [18203, 23489, 29034, 104970],
       label: {
         show: true,
-        position: 'right',
+        position: 'top',
       },
-      barWidth: 24,
+      barWidth: 40,
       itemStyle: {
 
         normal: {
@@ -81,12 +82,13 @@ window.onload = function() {
       containLabel: true
     },
     xAxis: {
-      type: 'value',
-      boundaryGap: [0, 0.01]
-    },
-    yAxis: {
       type: 'category',
       data: [  '药特分公司' ,'药特分公司' ,'新特药品','渝医贸药品','药品料']
+
+    },
+    yAxis: {
+      type: 'value',
+      boundaryGap: [0, 0.01]
     },
     series: [{
       name: '2011年',
@@ -94,7 +96,7 @@ window.onload = function() {
       data: [18203, 23489, 29034, 104970, 24970],
       label: {
         show: true,
-        position: 'right',
+        position: 'top',
       },
       barWidth: 24,
       itemStyle: {
@@ -469,7 +471,7 @@ window.onload = function() {
   ch1.setOption(op1);
   ch2.setOption(op2);
   ch3.setOption(op3);
-  ch4.setOption(op4);
+   ch4.setOption(op4);
   // ch5.setOption(op5);
   // ch6.setOption(op6);
 }

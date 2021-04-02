@@ -16,7 +16,7 @@
   <body>
     <div class="loading"></div>
     <div class="" id="app">
-      <div class="title_bg">
+      <div class="subtitle">
 
         <div class="mebubtn" @click="menuxiala=1">
           经营概览
@@ -25,6 +25,7 @@
           <img src="images/exit.png" alt="" />
         </div>
       </div>
+
 
       <div class="tabbox">
        <div class="tabsandv">
@@ -245,7 +246,7 @@
                     <div class="tmsndlin">
                       <div class="tinemttm">
                         <div class="tinemttm1">公司数量</div>
-                        <div class="tinemttm2">2 <em>家</em></div>
+                        <div class="tinemttm2">2{{index}} <em>家</em></div>
                       </div>
                     </div>
                     <div class="tmsndlin">
@@ -283,8 +284,8 @@
             <div class="cont cont-tab">
               <div class="tabtitle tabtitlex">
                 <span class="cur">营业收入</span>
-                <span>利润总额</span>
-                <span>现金流</span>
+               <!--  <span>利润总额</span>
+                <span>现金流</span> -->
                 <span>资金周转天数</span>
               </div>
               <div class="cont3in">
@@ -303,8 +304,8 @@
                   </div>
                 </div>
                 <div class="tabDiv">2</div>
-                <div class="tabDiv">3</div>
-                <div class="tabDiv">4</div>
+               <!--  <div class="tabDiv">3</div>
+                <div class="tabDiv">4</div> -->
               </div>
             </div>
 
@@ -854,9 +855,10 @@
     },
     mounted: function(){
       var oWidth = document.documentElement.clientWidth || document.body.clientWidth;
-      var bili = oWidth / 930;
+      var bili = oWidth / 800;
       $(".ditu").css({
-        transform: 'scale('+bili+')'
+        transform: 'scale('+bili+')',
+        left: -60*bili+'px'
       })
     }
 

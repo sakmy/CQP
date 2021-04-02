@@ -66,6 +66,34 @@ $(function() {
   $(".fuji").click(function(){
     $(this).parent().toggleClass("cur")
   })
+
+  function stopBuFn(e) {
+    var e = e || event;
+    if (e && e.stopPropagation) {
+      e.stopPropagation();
+
+    } else {
+      e.cancelBubble = true;
+    }
+  }
+  $(".tablain-sx").click(function(e){
+    stopBuFn(e)
+  })
+  $(".shaixuns ul li").click(function(){
+    $(this).toggleClass("cur");
+    var length = $(".shaixuns ul li.cur").length;
+    $(".dmsqem").html(length)
+  })
+  $(".chosnge").click(function(){
+    $(".shaixuns ul li").removeClass("cur")
+    $(".dmsqem").html(0)
+  })
+
+  $(".dbsnnebe").click(function(){
+    $(this).parents(".tabla").hide();
+  })
+
+
 })
 
 
