@@ -988,30 +988,46 @@ html {
 }
 .tabtitlex>span {
   flex: 1;
+  box-sizing: border-box;
+  text-align:center;
 }
 .tabtitle span.cur {
-  background: url(../images/tabspan1.png) no-repeat right top;
-  background-size: auto 100%;
+  background: url(../images/tabspan3.png) no-repeat right top;
+  background-size: 100% 100%;
   padding-top: .2rem;
-  border-top-right-radius: .6rem;
+
   /*border-top-left-radius: .6rem;*/
   box-shadow: 0px 0px 0px #000;
   color: #000;
   font-weight: bold;
+
 }
+
 .tabtitle span:last-child {
   padding-left: .2rem;
+  text-align:center;
 }
 .tabtitle span:last-child.cur {
   background: url(../images/tabspan2.png) no-repeat left top;
   background-size: auto 100%;
   border-top-right-radius: .0rem;
   border-top-left-radius: .6rem;
+}.tabtitle span:first-child.cur {
+  background: url(../images/tabspan1.png) no-repeat right top;
+  background-size: auto 100%;
+  border-top-right-radius: .6rem;
+  text-align:left;
+  padding-left: .33rem;
+
+}
+.tabtitle span:first-child{
+
+
 }
 .tabtitle span {
   cursor: pointer;
   flex: 1;
-  text-align: center;
+
   color: #0064DC;
   font-size: .26rem;
   line-height: .48rem;
@@ -1511,7 +1527,7 @@ border-radius: 0px 12px 12px 0px;*/
 
   line-height: .64rem;
   text-align: center;
-  border: 2px solid #EEEEEE;
+  border: 1px solid #EEEEEE;
   margin-right: .14rem;
   border-radius: .08rem;
   box-sizing: border-box;
@@ -1588,6 +1604,14 @@ margin: 0px .2rem;
 .riqswioer{
   text-align:center;
   width: 5.3rem;
+}
+.psalvs{
+  position:absolute;
+  left: 0px;
+  top: 100%;
+  width: 100%;
+  height: 10000px;
+  background:rgba(0,0,0,0.3);
 }
 .riqswioer .swiper-slide{
   font-weight:bold;
