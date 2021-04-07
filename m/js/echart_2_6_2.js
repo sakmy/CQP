@@ -1,7 +1,7 @@
 window.onload = function() {
   var ch1 = echarts.init(document.getElementById('ch1'));
   var ch2 = echarts.init(document.getElementById('ch2'));
-  //var ch4 = echarts.init(document.getElementById('ch4'));
+   //var ch4 = echarts.init(document.getElementById('ch4'));
   var ch5 = echarts.init(document.getElementById('ch5'));
   var ch6 = echarts.init(document.getElementById('ch6'));
   var op1 = {
@@ -41,7 +41,7 @@ window.onload = function() {
         show: true,
         position: 'right',
       },
-      barWidth: 44,
+      barWidth: 20,
       itemStyle: {
 
         normal: {
@@ -95,7 +95,7 @@ window.onload = function() {
         show: true,
         position: 'right',
       },
-      barWidth: 24,
+      barWidth: 20,
       itemStyle: {
 
         normal: {
@@ -156,7 +156,7 @@ window.onload = function() {
               name: '赊帐金额',
               type: 'bar',
               stack: 'total',
-  			barWidth:45,
+  			barWidth:20,
               label: {
                   show:true
               },
@@ -224,7 +224,7 @@ var op5 = {
         show: true,
         position: 'right',
       },
-      barWidth: 24,
+      barWidth: 20,
       itemStyle: {
 
         normal: {
@@ -278,7 +278,7 @@ var op5 = {
         show: true,
         position: 'right',
       },
-      barWidth: 24,
+      barWidth: 20,
       itemStyle: {
 
         normal: {
@@ -302,7 +302,7 @@ var op5 = {
 
   ch1.setOption(op1);
   ch2.setOption(op2);
-  //ch4.setOption(op4);
+  // //ch4.setOption(op4);
   ch5.setOption(op5);
   ch6.setOption(op6);
 }
