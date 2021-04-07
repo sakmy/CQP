@@ -206,7 +206,7 @@ html {
   margin-top: 24px;
 }
 .cont3in {
-  height: 199px;
+  height: 226px;
   background: #FFFFFF;
   box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.06);
   border-radius: 12px;
@@ -215,7 +215,6 @@ html {
   box-sizing: border-box;
   position: relative;
   z-index: 10;
-  overflow: auto;
 }
 .cont3 {
   position: relative;
@@ -406,7 +405,7 @@ border-radius: 0px 12px 12px 0px;*/
   /* width: 420px; */
 }
 .ditu {
-  height: 410px;
+  height: 461px;
   margin-top: 30px;
   position: relative;
   background: url(../images/ditubg.png) no-repeat center top;

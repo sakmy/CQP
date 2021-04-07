@@ -25,22 +25,24 @@ window.onload = function() {
       containLabel: true
     },
     xAxis: {
-      type: 'value',
-      boundaryGap: [0, 0.01],
+       axisLabel: {
+         interval:0,
+         rotate:40,
+         margin:20,
 
-    },
-    yAxis: {
+      },
       type: 'category',
       data: ['鲁齐鲁制药','诺和诺得','宜昌人福', '德国西门医', '江苏豪森药', '苏阿斯利康', '江苏恒瑞医'],
+    },
+    yAxis: {
+      type: 'value',
+      boundaryGap: [0, 0.01],
     },
     series: [{
       name: '2011年',
       type: 'bar',
       data: [0.4, 0.5, 0.6, 0.3, 0.4, 0.1, 0.8],
-      label: {
-        show: true,
-        position: 'right',
-      },
+
       stack: 'total',
       barWidth: 24,
       itemStyle: {
@@ -54,10 +56,7 @@ window.onload = function() {
       name: '2011年',
       type: 'bar',
       data: [0.4, 0.5, 0.6, 0.3, 0.4, 0.1, 0.8],
-      label: {
-        show: true,
-        position: 'right',
-      },
+
       stack: 'total',
       barWidth: 24,
       itemStyle: {
@@ -71,10 +70,7 @@ window.onload = function() {
       name: '2011年',
       type: 'bar',
       data: [0.4, 0.5, 0.6, 0.3, 0.4, 0.1, 0.8],
-      label: {
-        show: true,
-        position: 'right',
-      },
+
       stack: 'total',
       barWidth: 24,
       itemStyle: {
@@ -108,22 +104,24 @@ window.onload = function() {
       containLabel: true
     },
     xAxis: {
-      type: 'value',
-      boundaryGap: [0, 0.01],
+       axisLabel: {
+         interval:0,
+         rotate:40,
+         margin:20,
 
-    },
-    yAxis: {
+      },
       type: 'category',
       data: ['鲁齐鲁制药','诺和诺得','宜昌人福', '德国西门医', '江苏豪森药', '苏阿斯利康', '江苏恒瑞医'],
+    },
+    yAxis: {
+      type: 'value',
+      boundaryGap: [0, 0.01],
     },
     series: [{
       name: '2011年',
       type: 'bar',
       data: [0.4, 0.5, 0.6, 0.3, 0.4, 0.1, 0.8],
-      label: {
-        show: true,
-        position: 'right',
-      },
+
       stack: 'total',
       barWidth: 24,
       itemStyle: {
@@ -137,10 +135,7 @@ window.onload = function() {
       name: '2011年',
       type: 'bar',
       data: [0.4, 0.5, 0.6, 0.3, 0.4, 0.1, 0.8],
-      label: {
-        show: true,
-        position: 'right',
-      },
+
       stack: 'total',
       barWidth: 24,
       itemStyle: {
@@ -154,10 +149,7 @@ window.onload = function() {
       name: '2011年',
       type: 'bar',
       data: [0.4, 0.5, 0.6, 0.3, 0.4, 0.1, 0.8],
-      label: {
-        show: true,
-        position: 'right',
-      },
+
       stack: 'total',
       barWidth: 24,
       itemStyle: {
@@ -283,7 +275,7 @@ var op5 = {
         show: true,
         position: 'top',
       },
-      barWidth: 54,
+      barWidth: 40,
       itemStyle: {
 
         normal: {

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+    <script src="libs/script/jquery.min.js"></script>
+    <meta name="viewport"  content="width=device-width,user-scalable=no">
+    <link href="favicon.ico" rel="shortcut icon">
+    <link rel="stylesheet" rev="stylesheet" href="style/reset.css" type="text/css" />
+    <link rel="stylesheet" rev="stylesheet" href="style/global.css" type="text/css" />
+    <link rel="stylesheet" rev="stylesheet" href="style/index.css" type="text/css" />
+    <link href="libs/style/font-awesome.min.css" rel="stylesheet">
+    <script type="text/javascript" src="js/echarts.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+  </head>
+  <body>
+    <div class="loading"></div>
+    <div class="" id="app">
+      <div class="subtitle">
+
+        <div class="mebubtn"  >
+          预付款
+        </div>
+        <div class="exit">
+          <img src="images/exit.png" alt="" />
+        </div>
+      </div>
+      <div class="">
+        <div class="tabbox">
+         <div class="tabsandv">
+            <span qie="0" class="tabsp tabspx1"
+              ><span class="">公司名称</span> <em class="fa fa-angle-down"></em
+              ><em class="fa fa-angle-up"></em
+            ></span>
+            <div class="tabla tabla1" qiedata="0">
+              <div class="tablain">
+                <div class="tablaqie tablaqie2">
+                  <ul>
+                    <li class="cur">重药集团</li>
+                    <li class="">重药集团</li>
+                    <li class="">重药集团</li>
+                    <li class="">重药集团</li>
+                    <li class="">重药集团</li>
+                    <li class="">重药集团</li>
+                    <li class="">重药集团</li>
+                    <li class="">重药集团</li>
+                    <li class="">重药集团</li>
+                    <li class="">重药集团</li>
+                    <li class="">重药集团</li>
+                    <li class="">重药集团</li>
+                  </ul>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tabsandv">
+
+            <span qie="1" class="tabsp tabspx2"
+              ><span class="">筛选 <em class="dmsqem">1</em></span> <em class="fa fa-angle-down"></em
+              ><em class="fa fa-angle-up"></em
+            ></span>
+            <div class="tabla tabla1" qiedata="1" style="overflow:visible;">
+              <div class="psalvs"></div>
+              <div class="tablain tablain-sx">
+                <div class="shaixunswa">
+                   <div class="shaixuns">
+                     <div class="shaiduls">年份</div>
+                     <ul class="dwmsu1">
+                       <li>2021年</li>
+                       <li>2021年</li>
+                       <li>2021年</li>
+                       <li>2021年</li>
+                       <li>2021年</li>
+                       <li>2021年</li>
+                       <li>2021年</li>
+                       <li>2021年</li>
+                     </ul>
+                   </div>
+
+                   <div class="shaixuns">
+                     <div class="shaiduls">月份</div>
+                     <ul class="dwmsu2">
+                       <li>1月</li>
+                       <li>2月</li>
+                       <li>3月</li>
+                       <li>4月</li>
+                       <li>5月</li>
+                       <li>6月</li>
+                       <li>7月</li>
+                       <li>8月</li>
+                       <li>9月</li>
+                       <li>10月</li>
+                       <li>11月</li>
+                       <li>12月</li>
+
+                     </ul>
+                   </div>
+
+                   <div class="shaixuns">
+                     <div class="shaiduls">是否关联交易</div>
+                     <ul class="dwmsu3">
+                       <li>所有</li>
+                       <li>是</li>
+
+                       <li>否</li>
+
+
+                     </ul>
+                   </div>
+
+
+                   <div class="chosnebtn">
+                     <a href="###" class="chosnge">重设</a>
+                     <a href="###" class="cur dbsnnebe">确定</a>
+                   </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+      </div>
+      <!--  -->
+
+
+      <div class="submain-1">
+
+
+        <div class="wdwitm">
+          <div class="wiitlt">采购占比  <em>三大市场</em></div>
+          <div class="csitem csitem-xs"><span><em class="demem demem1"></em>总部销售市场</span> <span><em class="demem demem2"></em>南部销售市场</span> <span><em class="demem demem3"></em>北部销售市场%</span></div>
+          <div class="wsincont">
+            <div class="charwa">
+              <div class="scichart" id="ch1" style="height: 4.46rem;">
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="wdwitm">
+          <div class="wiitlt">预付款占比  <em>三大市场</em></div>
+          <div class="csitem csitem-xs"><span><em class="demem demem1"></em>总部销售市场</span> <span><em class="demem demem2"></em>南部销售市场</span> <span><em class="demem demem3"></em>北部销售市场%</span></div>
+          <div class="wsincont">
+            <div class="charwa">
+              <div class="scichart" id="ch2" style="height: 4.46rem;">
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="wdwitm">
+          <div class="wiitlt">公司排名</div>
+
+          <div class="wsincont">
+            <div class="charwa">
+              <div class="scichart" id="ch3" style="height: 3.46rem;">
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="wdwitm">
+          <div class="wiitlt">供应商排名 </div>
+
+          <div class="wsincont">
+            <div class="charwa">
+              <div class="scichart" id="ch4" style="height: 4.46rem;">
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="wdwitm">
+          <div class="wiitlt">应付同比趋势 </div>
+          <div class="csitem csitem-xs"><span><em class="demem demem1"></em>同期预付款金额</span> <span><em class="demem demem2"></em>预付款金额</span> <span><em class="demem demem3"></em>预付款金额同比增长率%</span></div>
+          <div class="wsincont">
+            <div class="charwa">
+              <div class="scichart" id="ch5" style="height: 3.46rem;">
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+      <!--  -->
+
+      <!--  -->
+
+
+
+      <!-- 下拉 -->
+      <div class="menuxiala" v-if="menuxiala">
+        <div class="mlain">
+          <div class="melaitem">
+            <div class="mlatitle"><img src="images/menutitle.png" alt="" /> 集团管控报表</div>
+            <div class="meilist">
+              <ul>
+                <li><a href="###">经营概览</a></li>
+                <li><a href="###">销售分析</a></li>
+                <li><a href="###">应收账款分析</a></li>
+                <li><a href="###">应付账款分析</a></li>
+                <li><a href="###">库存概览</a></li>
+                <li><a href="###">库存明细</a></li>
+                <li><a href="###">采购概览</a></li>
+                <li><a href="###">采购明细</a></li>
+              </ul>
+              <div class="meadd">
+                <img src="images/menuadd.png" alt="" /> 新增
+              </div>
+            </div>
+          </div>
+
+          <div class="melaitem">
+            <div class="mlatitle"><img src="images/menutitle.png" alt="" /> 运营管理部</div>
+            <div class="meilist">
+              <ul>
+                <li><a href="###">报表一</a></li>
+                <li><a href="###">报表一</a></li>
+                <li><a href="###">报表一</a></li>
+
+              </ul>
+              <div class="meadd">
+                <img src="images/menuadd.png" alt="" /> 新增
+              </div>
+            </div>
+          </div>
+
+          <div class="melaitem">
+            <div class="mlatitle"><img src="images/menutitle.png" alt="" /> 销售中心</div>
+            <div class="meilist">
+              <ul>
+                <li><a href="###">报表一</a></li>
+                <li><a href="###">报表一</a></li>
+                <li><a href="###">报表一</a></li>
+                <li><a href="###">报表一</a></li>
+                <li><a href="###">报表一</a></li>
+                <li><a href="###">报表一</a></li>
+
+              </ul>
+              <div class="meadd">
+                <img src="images/menuadd.png" alt="" /> 新增
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mebtnsx">
+          <a href="###" @click="menuxiala=0">取消</a>
+          <a href="###" @click="menuxiala=0" class="cur">确定</a>
+        </div>
+      </div>
+
+    </div>
+  </body>
+
+  <link href="libs/style/swiper.min.css" rel="stylesheet">
+  <script type="text/javascript"  src="libs/script/swiper.min.js"></script>
+
+  <script type="text/javascript">
+  var vm = new Vue({
+
+    el: "#app",
+    data: function(){
+      return {
+        cur: 0,
+        custab: 0,
+        menuxiala: 0,
+        iconList1: [
+          1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31
+        ],
+         iconList2: [
+          1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33
+        ],
+
+      }
+    },
+    mounted: function(){
+      var oWidth = document.documentElement.clientWidth || document.body.clientWidth;
+      var bili = oWidth / 800;
+      $(".ditu").css({
+        transform: 'scale('+bili+')',
+        left: -60*bili+'px'
+      })
+
+
+      new Swiper('.riqswioer', {
+        slidesPerView: '6',
+
+        speed: 500,
+        navigation: {
+          nextEl: '.lebtnb-r',
+          prevEl: '.lebtnb-l',
+        },
+
+      })
+    }
+
+  });
+  </script>
+
+<script type="text/javascript" src="js/echart_2_7.js"></script>
+
+
+
+</html>

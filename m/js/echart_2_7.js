@@ -1,9 +1,10 @@
 window.onload = function() {
   var ch1 = echarts.init(document.getElementById('ch1'));
   var ch2 = echarts.init(document.getElementById('ch2'));
+  var ch3 = echarts.init(document.getElementById('ch3'));
   var ch4 = echarts.init(document.getElementById('ch4'));
   var ch5 = echarts.init(document.getElementById('ch5'));
-  var ch6 = echarts.init(document.getElementById('ch6'));
+  // var ch6 = echarts.init(document.getElementById('ch6'));
   var op1 = {
     title: {
       show: false
@@ -207,6 +208,64 @@ window.onload = function() {
 
 
 
+var op3 ={
+    title: {
+      show: false
+    },
+    tooltip: {
+      trigger: 'axis',
+      axisPointer: {
+        type: 'shadow'
+      }
+    },
+    legend: {
+      show: false
+    },
+    grid: {
+      left: '3%',
+      right: '4%',
+      top: '4%',
+      bottom: '0%',
+      containLabel: true
+    },
+    xAxis: {
+      type: 'category',
+      data: ['鲁齐鲁制药','诺和诺得','宜昌人福', '德国西门医', '江苏豪森药', '苏阿斯利康', '江苏恒瑞医'],
+
+    },
+    yAxis: {
+       type: 'value',
+      boundaryGap: [0, 0.01],
+    },
+    series: [{
+      name: '2011年',
+      type: 'bar',
+      data: [0.4, 0.5, 0.6, 0.3, 0.4, 0.1, 0.8],
+      label: {
+        show: true,
+        position: 'right',
+      },
+      barWidth: 24,
+      itemStyle: {
+
+        normal: {
+         // barBorderRadius:[3, 3, 0, 0],
+          color: new echarts.graphic.LinearGradient(0, 0, 1, 0, [{
+            offset: 0,
+            color: '#1E6EFF'
+          }, {
+            offset: 1,
+            color: '#47E3FF'
+          }]),
+        }
+      },
+    }, ]
+  };
+
+
+
+
+
 var op4 ={
     title: {
       show: false
@@ -228,69 +287,13 @@ var op4 ={
       containLabel: true
     },
     xAxis: {
-      type: 'value',
-      boundaryGap: [0, 0.01],
-    show:false
-    },
-    yAxis: {
       type: 'category',
       data: ['鲁齐鲁制药','诺和诺得','宜昌人福', '德国西门医', '江苏豪森药', '苏阿斯利康', '江苏恒瑞医'],
-    },
-    series: [{
-      name: '2011年',
-      type: 'bar',
-      data: [0.4, 0.5, 0.6, 0.3, 0.4, 0.1, 0.8],
-      label: {
-        show: true,
-        position: 'right',
-      },
-      barWidth: 24,
-      itemStyle: {
 
-        normal: {
-         // barBorderRadius:[3, 3, 0, 0],
-          color: new echarts.graphic.LinearGradient(0, 0, 1, 0, [{
-            offset: 0,
-            color: '#1E6EFF'
-          }, {
-            offset: 1,
-            color: '#47E3FF'
-          }]),
-        }
-      },
-    }, ]
-  };
-
-
-
-  var op5  = {
-    title: {
-      show: false
-    },
-    tooltip: {
-      trigger: 'axis',
-      axisPointer: {
-        type: 'shadow'
-      }
-    },
-    legend: {
-      show: false
-    },
-    grid: {
-      left: '3%',
-      right: '4%',
-      top: '4%',
-      bottom: '0%',
-      containLabel: true
-    },
-    xAxis: {
-      type: 'value',
-      boundaryGap: [0, 0.01],
-    show:false
     },
     yAxis: {
-      type: 'category',
-      data: ['鲁齐鲁制药','诺和诺得','宜昌人福', '德国西门医', '江苏豪森药', '苏阿斯利康', '江苏恒瑞医'],
+       type: 'value',
+      boundaryGap: [0, 0.01],
     },
     series: [{
       name: '2011年',
@@ -320,7 +323,8 @@ var op4 ={
 
 
 
-var op6  = {
+
+var op5  = {
       title: {
         show: false,
         text: '折线图堆叠'
@@ -434,7 +438,8 @@ var op6  = {
 
   ch1.setOption(op1);
   ch2.setOption(op2);
+  ch3.setOption(op3);
   ch4.setOption(op4);
   ch5.setOption(op5);
-  ch6.setOption(op6);
+  // ch6.setOption(op6);
 }

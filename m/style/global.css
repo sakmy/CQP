@@ -1631,6 +1631,16 @@ margin: 0px .2rem;
   -ms-overflow-scrolling : touch;
   -o-overflow-scrolling : touch;
 }
+.submain-1{
+  height: calc(100vh - 2.24rem - .25rem - .2rem);
+  overflow-y: auto;
+  margin-top: .2rem;
+  overflow-scrolling : touch;
+  -webkit-overflow-scrolling : touch;
+  -moz-overflow-scrolling : touch;
+  -ms-overflow-scrolling : touch;
+  -o-overflow-scrolling : touch;
+}
 
 .swimtms{
   display: flex;
@@ -1709,4 +1719,18 @@ background: linear-gradient(360deg, #FD5900 0%, #FFDE00 100%);
 }
 .pecimt-xs>span{
   width: 33.33%;
+}
+
+.submain-1{
+
+}
+
+
+.demem_c_1 {
+  background: #FFC600;
+}
+.demem_c_2 {
+  background: #FE6200;
+}.demem_c_3 {
+  background: #0F46BC;
 }
