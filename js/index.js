@@ -12,7 +12,7 @@ $(function() {
       "height": 1080,
       "width": 1920,
     })
-    $(".indexwa").height(gaodu);
+    $(".indexwa").height(gaodu-18);
   }
   biliFn();
   window.onresize = function() {
