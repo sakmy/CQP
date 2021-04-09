@@ -36,7 +36,7 @@ window.onload = function() {
     series: [{
       name: '2011年',
       type: 'bar',
-      data: [0.4, 0.5, 0.6],
+      data: [2550, 4062, 4991],
       label: {
         show: true,
         position: 'right',
@@ -81,16 +81,16 @@ window.onload = function() {
     xAxis: {
       type: 'value',
       boundaryGap: [0, 0.01],
-	  show:false
+    show:false
     },
     yAxis: {
       type: 'category',
-      data: ['化学药品','医疗器械','中成药', '其他', '中药饮片', '其他器具设…', '江苏恒瑞医'],
+      data: ['其他器具设...','中药饮片','其他','中成药','医疗器械','化学药品'],
     },
     series: [{
       name: '2011年',
       type: 'bar',
-      data: [0.4, 0.5, 0.6, 0.3, 0.4, 0.1, 0.8],
+      data: [343,643, 124,653,231, 643],
       label: {
         show: true,
         position: 'right',
@@ -163,7 +163,7 @@ window.onload = function() {
               emphasis: {
                   focus: 'series'
               },
-              data: [320, 302, 301, 334, 390, 330, 320,200,200,200,200,200],
+              data: [320, 302, 301, 334, 390, 330, 320,200,200,200,200,200,200,200],
   			itemStyle:{
   				normal:{color:'#FFC600'}
   			}
@@ -178,7 +178,7 @@ window.onload = function() {
               emphasis: {
                   focus: 'series'
               },
-              data: [120, 132, 101, 134, 90, 230, 210,200,200,200,200,200],
+              data: [120, 132, 101, 134, 90, 230, 210,200,200,200,200,200,200,200],
   			itemStyle:{
   				normal:{color:'#FE6200'}
   			}

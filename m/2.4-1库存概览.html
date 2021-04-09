@@ -20,7 +20,7 @@
       <div class="subtitle">
 
         <div class="mebubtn"  >
-          供应商概览
+          库存概览
         </div>
         <div class="exit">
           <img src="images/exit.png" alt="" />
@@ -133,95 +133,75 @@
 
 
         </div>
-
       </div>
       <!--  -->
 
 
       <div class="submain-1">
-
         <div class="swimtms swimtms-xs">
           <div class="swimtvl">
-            <div class="swimtvls1">4.76</div>
-            <div class="swimtvls2">新增供应商数</div>
+            <div class="swimtvls1">37170</div>
+            <div class="swimtvls2">品规数</div>
           </div>
           <div class="swimtvl">
-            <div class="swimtvls1">86.31</div>
-            <div class="swimtvls2">有效供应商数</div>
+            <div class="swimtvls1">112958206</div>
+            <div class="swimtvls2">同期应收账款</div>
           </div>
 
           <div class="swimtvl">
-            <div class="swimtvls1">1,489</div>
-            <div class="swimtvls2">有效供应商数</div>
+            <div class="swimtvls1">30.35</div>
+            <div class="swimtvls2">库存金额</div>
           </div>
           <div class="swimtvl">
-            <div class="swimtvls1">4.76</div>
-            <div class="swimtvls2">同期新增供应商数</div>
-          </div>
-          <div class="swimtvl">
-            <div class="swimtvls1">86.31</div>
-            <div class="swimtvls2">同期有效供应商数</div>
+            <div class="swimtvls1">（空白）</div>
+            <div class="swimtvls2">同期库存金额</div>
           </div>
 
+          
           <div class="swimtvl">
-            <div class="swimtvls1">1,489</div>
-            <div class="swimtvls2">同期采购供应商数</div>
+            <div class="swimtvls1">7.93</div>
+            <div class="swimtvls2">前100品质库存金额</div>
           </div>
+
+
+          
+          <div class="swimtvl">
+            <div class="swimtvls1">22</div>
+            <div class="swimtvls2">库存周转天数</div>
+          </div>
+
 
 
         </div>
 
+
         <div class="wdwitm">
-          <div class="wiitlt">供应商分布
-
-          </div>
-
+          <div class="wiitlt">库存效期</div>
           <div class="wsincont">
             <div class="charwa">
-              <div class="scichart"  >
-                <div class="dituwa" style="height: 4.7rem;">
+              <div class="scichart" id="ch1" style="height: 4.46rem;">
+
+              </div>
+            </div>
+          </div>
+        </div>
 
 
-
-              <div class="ditu vx" style="margin-top: 0px;" >
-
-                <!-- <div class="dituzuowz">
-                  <div class="ditmw1"><em><img src="images/gs1.png" alt="" /></em> 公司数量 600 家</div>
-                  <div class="ditmw2">一级公司(200家) 二级公司(300家) 三级公司(200家)</div>
-                  <div class="ditmw2">控股公司(200家) 参股公司(200家)</div>
-                  <div class="ditmw1"><em><img src="images/gs2.png" alt="" /></em> 门店数量 502 家</div>
-                </div> -->
-                <img src="images/ditu2.png" alt="" />
-
-                <div class="" id="xIcon">
-                  <div :class=" 'dituk '+ 'dituk'+item" v-for="(item,index) in iconList1">
-                      <div class="ditubg"></div>
-                      <div class="dituicon" @click="cur = index">
-                        <em></em>
-                        <em class="icondian"></em>
-                      </div>
-                    </div>
-
+        <div class="wdwitm">
+          <div class="wiitlt">库存库龄 <span class="small">库龄段</span></div>
+          <div class="wsincont">
+            <div class="piedale">
+              <div class="pecimt">
+                <span><em class="dpoie dpoie1"></em> 6个月内</span>
+                <span><em class="dpoie dpoie2"></em> 1年内</span>
+                <span><em class="dpoie dpoie3"></em> 空白</span>
+                <span><em class="dpoie dpoie4"></em> 2年内</span>
+                <span><em class="dpoie dpoie5"></em> 2年以上</span>
+              </div>
+              <div class=" ">
+                <div class="">
+                <div class="chartvx" id="ch10" style="height: 3.2rem;width: 4.6rem;"></div>
                 </div>
-                <!-- 1 -->
-
-
-              </div>
-
-
-            </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="wdwitm">
-          <div class="wiitlt">有效供应商数
-
-          </div>
-
-          <div class="wsincont">
-            <div class="charwa">
-              <div class="scichart" id="ch1" style="height: 3.16rem;">
 
               </div>
             </div>
@@ -230,53 +210,54 @@
 
 
         <div class="wdwitm">
-          <div class="wiitlt">有效供应商数 </div>
+          <div class="wiitlt">库存动销比 </div>
           <div class="wsincont">
-            <div class="charwa">
-              <div class="scichart" id="ch2" style="height: 5.16rem;">
-
+            <div class="csitem">
+              <span><em class="demem demem1"></em>期末库存品规数</span>
+              <span><em class="demem demem2"></em>销售品规数</span>
+              <span><em class="demem demem3_1"></em>动销比</span>
+            </div>
+            <div class="tblsct">
+              <div class="ynshtab ynshtab-scrol">
+                <div class="chartvx" id="ch8" style="height: 160px;width: 890px;"></div>
               </div>
+
+
             </div>
           </div>
-          <!-- <div class="csitem csitem-xs top0">
-              <span><em class="demem demem_c_1"></em>地方储备</span>
-              <span><em class="demem demem_c_2"></em>中央储备</span>
-              <span><em class="demem demem_c_3"></em>专项储备</span>
-              <div class="flex1"></div>
-            </div>
-          <div class="wsincont">
-            <div class="charwa">
-              <div class="scichart" id="ch2" style="height: 5.46rem;">
-
-              </div>
-            </div>
-          </div> -->
         </div>
 
 
         <div class="wdwitm">
-          <div class="wiitlt">购进金额排名</div>
-
+          <div class="wiitlt">库存周转趋势 </div>
           <div class="wsincont">
-            <div class="charwa">
-              <div class="scichart" id="ch5" style="height: 5.46rem;">
+            <div class="csitem">
+              <span><em class="demem demem1"></em>同期含税库存周转天数</span>
+              <span><em class="demem demem2"></em>含税库存周转天数</span>
+            </div>
+            <div class=" ">
+                <div class="">
+                <div class="chartvx" id="ch4" style="height: 3.2rem;width:100%;"></div>
+                </div>
 
               </div>
-            </div>
           </div>
         </div>
+
 
         <div class="wdwitm">
-          <div class="wiitlt">销售额排名 </div>
-
+          <div class="wiitlt">品类库存周转天数 </div>
           <div class="wsincont">
-            <div class="charwa">
-              <div class="scichart" id="ch6" style="height: 4.46rem;">
+            <div class=" ">
+                <div class="ynshtab ynshtab-scrol">
+                <div class="chartvx" id="ch5" style="height: 260px;width: 890px;"></div>
+                </div>
 
               </div>
-            </div>
           </div>
         </div>
+
+
 
 
 
@@ -378,7 +359,7 @@
     },
     mounted: function(){
       var oWidth = document.documentElement.clientWidth || document.body.clientWidth;
-      var bili = oWidth / 865;
+      var bili = oWidth / 800;
       $(".ditu").css({
         transform: 'scale('+bili+')',
         left: -60*bili+'px'
@@ -400,7 +381,7 @@
   });
   </script>
 
-<script type="text/javascript" src="js/echart_2_6_2.js"></script>
+<script type="text/javascript" src="js/echart_2_2_2.js"></script>
 
 
 
