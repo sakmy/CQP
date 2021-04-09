@@ -1,9 +1,9 @@
 window.onload = function() {
   var ch1 = echarts.init(document.getElementById('ch1'));
-  var ch8 = echarts.init(document.getElementById('ch8'));
-  var ch10 = echarts.init(document.getElementById('ch10'));
   var ch4 = echarts.init(document.getElementById('ch4'));
+  var ch2 = echarts.init(document.getElementById('ch2'));
   var ch5 = echarts.init(document.getElementById('ch5'));
+  var ch6 = echarts.init(document.getElementById('ch6'));
 
 
 
@@ -75,7 +75,7 @@ window.onload = function() {
 
 
 
-var op10 = {
+var op2 = {
     title: {
       show: false
     },
@@ -194,7 +194,7 @@ var op10 = {
     }]
   };
 
- var op8 = {
+ var op4 = {
     title: {
       show: false,
       text: '折线图堆叠'
@@ -454,7 +454,7 @@ var op10 = {
   };
 
 
-  var op4  = {
+  var op5  = {
       tooltip: {
           trigger: 'axis',
           axisPointer: {            // 坐标轴指示器，坐标轴触发有效
@@ -546,7 +546,7 @@ var op10 = {
 
 
 
-var op5  = {
+var op6  = {
     tooltip: {
         trigger: 'axis',
         axisPointer: {            // 坐标轴指示器，坐标轴触发有效
@@ -626,10 +626,10 @@ var op5  = {
 
 
 ch1.setOption(op1);
-ch10.setOption(op10);
-ch8.setOption(op8);
+ch2.setOption(op2);
 ch4.setOption(op4);
 ch5.setOption(op5);
+ch6.setOption(op6);
 
 
 
