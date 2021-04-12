@@ -380,8 +380,15 @@ window.onload = function() {
     title: {
       show: true, //显示策略，默认值true,可选为：true（显示） | false（隐藏）
       text: '综合毛利率', //主标题文本，'\n'指定换行
+
     },
     tooltip: {},
+    grid: {
+        left: '50%',
+        right: 90,
+        top: '18%',
+        bottom: '10%'
+    },
     color: ['#fff', '#fff', '#fff'],
     series: [{
       type: 'graph',
@@ -500,7 +507,7 @@ window.onload = function() {
        show: false,
     },
     grid: {
-        left: '10%',
+        left: '15%',
         right: 90,
         top: '18%',
         bottom: '10%'
@@ -716,10 +723,10 @@ window.onload = function() {
       data: ['期末库存品规数', '销售品规数', '动销比']
     },
     grid: {
-      left: '3%',
+      left: '8%',
       top: '8%',
-      right: '1%',
-      bottom: '15%',
+      right: '7%',
+      bottom: '25%',
       containLabel: false
     },
     toolbox: {
@@ -734,6 +741,12 @@ window.onload = function() {
       axisTick: {
         alignWithLabel: true
       },
+      axisLabel: {
+         interval:0,
+         rotate:40,
+         margin:20,
+
+      },
       data: ['瑞康医药', '中国医药', '柳药股份', '国药一致', '嘉事堂', '重药控股', '九州通', '国药控股 ', '鹭燕医药', '国药股份', '南京医药', '英特集团']
     },
     yAxis: {
@@ -745,17 +758,10 @@ window.onload = function() {
     series: [{
       name: '综合毛利率',
       type: 'bar',
-      barWidth: '20',
+      barWidth: '5',
       itemStyle: {
         normal: {
-          label: {
-            show: true, //开启显示
-            position: 'top', //在上方显示
-            textStyle: { //数值样式
-              color: 'black',
-              fontSize: 12
-            }
-          },
+
           barBorderRadius: [3, 3, 0, 0],
           color: new echarts.graphic.LinearGradient(0, 1, 0, 0, [{
             offset: 0,
@@ -770,17 +776,10 @@ window.onload = function() {
     }, {
       name: '净利率',
       type: 'bar',
-      barWidth: '20',
+      barWidth: '5',
       itemStyle: {
         normal: {
-          label: {
-            show: true, //开启显示
-            position: 'top', //在上方显示
-            textStyle: { //数值样式
-              color: 'black',
-              fontSize: 12
-            }
-          },
+
           barBorderRadius: [3, 3, 0, 0],
           color: new echarts.graphic.LinearGradient(0, 1, 0, 0, [{
             offset: 0,
@@ -795,17 +794,10 @@ window.onload = function() {
     }, {
       name: '净资产收益率',
       type: 'bar',
-      barWidth: '20',
+      barWidth: '5',
       itemStyle: {
         normal: {
-          label: {
-            show: true, //开启显示
-            position: 'top', //在上方显示
-            textStyle: { //数值样式
-              color: 'black',
-              fontSize: 12
-            }
-          },
+
           barBorderRadius: [3, 3, 0, 0],
           color: new echarts.graphic.LinearGradient(0, 1, 0, 0, [{
             offset: 0,

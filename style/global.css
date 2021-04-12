@@ -1242,6 +1242,23 @@ background: rgba(255, 203, 70, 0.1);}
   left: 349px;
   top: 174px;
 }
+
+
+.dituk42 {
+  width: 24px;
+  height: 21px;
+  left: 704px;
+  top: 251px;
+}
+.dituk42 .ditubg {
+  /* display: block; */
+  background: url(../images/ditu42.png) no-repeat center top;
+  background-size: 100% 100%;
+}
+.dituk42 .dituicon {
+  left: 7px;
+  top: 8px;
+}
 .dituiconsj {
   width: 26px;
   height: 30px;

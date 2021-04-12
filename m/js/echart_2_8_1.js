@@ -60,7 +60,7 @@ window.onload = function() {
         show: true,
         position: 'right',
       },
-      barWidth: 24,
+      barWidth: 20,
       itemStyle: {
 
         normal: {
@@ -131,7 +131,7 @@ window.onload = function() {
         show: true,
         position: 'right',
       },
-      barWidth: 24,
+      barWidth: 20,
       itemStyle: {
 
         normal: {
@@ -203,7 +203,7 @@ window.onload = function() {
         show: true,
         position: 'right',
       },
-      barWidth: 24,
+      barWidth: 20,
       itemStyle: {
         normal: {
              // barBorderRadius:[3, 3, 0, 0],
@@ -275,7 +275,7 @@ window.onload = function() {
         show: true,
         position: 'right',
       },
-      barWidth: 24,
+      barWidth: 20,
       itemStyle: {
 
         normal: {
@@ -346,7 +346,7 @@ window.onload = function() {
         show: true,
         position: 'right',
       },
-      barWidth: 24,
+      barWidth: 20,
       itemStyle: {
 
         normal: {
@@ -367,5 +367,6 @@ window.onload = function() {
   ch3.setOption(op3);
    ch4.setOption(op4);
    ch5.setOption(op5);
+   $(".tabDiv").eq(1).hide();
   // ch6.setOption(op6);
 }
