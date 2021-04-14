@@ -17,7 +17,7 @@
   <body>
     <div class="loading"></div>
     <div class="" id="app">
-      <div class="title_bg">
+      <div class="title_bg" style="position:fixed;top: 0px; width: 100%;" >
 
         <div class="mebubtn" @click="menuxiala=1">
           经营概览
@@ -32,7 +32,7 @@
 
 
       <!-- 下拉 -->
-      <div class="menuxiala" style="position:relative;top: 0px;" v-if="menuxiala">
+      <div class="menuxiala" v-if="menuxiala">
         <div class="mlain">
           <div class="melaitem">
             <div class="mlatitle"><img src="images/menutitle.png" alt="" /> 集团管控报表</div>
