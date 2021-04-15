@@ -191,6 +191,9 @@ html {
   background: #D8E6FB;
   color: #0064DC;
 }
+.gwitamwasp{
+  position:relative;
+}
 .tablaqie2 {}
 .gwitamwa {
   background: url(../images/timbg.png) no-repeat center top;
@@ -198,10 +201,9 @@ html {
   height: 1.26rem;
 }
 .gwitam {
-  display: flex;
+
   height: 1.26rem;
-  align-items: center;
-  width: calc(1.8rem * 7);
+
 }
 .csiiatm {
   display: flex;
@@ -210,7 +212,7 @@ html {
   justify-content: center;
   flex: 1;
   color: #0064DC;
-  width: 1.8rem;
+   height: 1.26rem;
 }
 .csiiatm1 {
   font-size: .24rem;
@@ -1894,4 +1896,27 @@ border-radius: 0px 12px 12px 0px;*/
   height: .03rem;
   background:#0064dc;
   top: .06rem ;
+}
+
+.gwitamwa{
+  position:relative;
+  padding: 0px .3rem;
+}
+.dwmgbtn{
+  position:absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size:.4rem;
+  width: .36rem;
+  height: .36rem;
+  z-index: 60;
+}
+.dwmgbtn.next{
+  background: url(../images/crbtn.png) no-repeat center top;
+  background-size: 100% 100%;
+  right: .1rem;
+}.dwmgbtn.prev{
+  background: url(../images/clbtn.png) no-repeat center top;
+  background-size: 100% 100%;
+  left: .1rem;
 }

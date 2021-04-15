@@ -118,40 +118,68 @@
 
       <!--  -->
       <!--  -->
+
+
       <div class="indexmain">
         <div class="gwitamwa">
-          <div class="gwitam">
-            <div class="csiiatm">
-              <div class="csiiatm1">公司数量</div>
-              <div class="csiiatm2"><em>600</em>家</div>
-            </div>
-            <div class="csiiatm">
-              <div class="csiiatm1">一级公司</div>
-              <div class="csiiatm2"><em>200</em>家</div>
-            </div>
-            <div class="csiiatm">
-              <div class="csiiatm1">二级公司</div>
-              <div class="csiiatm2"><em>300</em>家</div>
-            </div>
-            <div class="csiiatm">
-              <div class="csiiatm1">三级公司</div>
-              <div class="csiiatm2"><em>200</em>家</div>
-            </div>
-            <div class="csiiatm">
-              <div class="csiiatm1">控股公司</div>
-              <div class="csiiatm2"><em>200</em>家</div>
-            </div>
-            <div class="csiiatm">
-              <div class="csiiatm1">参股公司</div>
-              <div class="csiiatm2"><em>200</em>家</div>
-            </div>
-            <div class="csiiatm">
-              <div class="csiiatm1">门店数量</div>
-              <div class="csiiatm2"><em>502</em>家</div>
-            </div>
+           <div class="dwmgbtn prev"></div>
+           <div class="dwmgbtn next"> </div>
+          <div class="swiper-container gwitamwasp">
+
+            <div class="gwitam swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="csiiatm ">
+                  <div class="csiiatm1">公司数量</div>
+                  <div class="csiiatm2"><em>600</em>家</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+              <div class="csiiatm ">
+                <div class="csiiatm1">一级公司</div>
+                <div class="csiiatm2"><em>200</em>家</div>
+              </div>
+              </div>
+
+               <div class="swiper-slide">
+              <div class="csiiatm ">
+                <div class="csiiatm1">二级公司</div>
+                <div class="csiiatm2"><em>300</em>家</div>
+              </div>
+              </div>
+
+              <div class="swiper-slide">
+                 <div class="csiiatm ">
+                  <div class="csiiatm1">三级公司</div>
+                  <div class="csiiatm2"><em>200</em>家</div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                 <div class="csiiatm ">
+                  <div class="csiiatm1">控股公司</div>
+                  <div class="csiiatm2"><em>200</em>家</div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                 <div class="csiiatm ">
+                  <div class="csiiatm1">参股公司</div>
+                  <div class="csiiatm2"><em>200</em>家</div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="csiiatm ">
+                  <div class="csiiatm1">门店数量</div>
+                  <div class="csiiatm2"><em>502</em>家</div>
+                </div>
+              </div>
 
 
+            </div>
           </div>
+
+
         </div>
         <!--  -->
 
@@ -827,6 +855,8 @@
     </div>
   </body>
 
+  <link href="libs/style/swiper.min.css" rel="stylesheet">
+  <script src="libs/script/swiper.min.js"></script>
 
 
   <script type="text/javascript">
@@ -853,6 +883,17 @@
       $(".ditu").css({
         transform: 'scale('+bili+')',
         left: -60*bili+'px'
+      })
+
+      new Swiper('.gwitamwasp', {
+        slidesPerView: 4,
+
+        speed: 500,
+        navigation: {
+          nextEl: '.next',
+          prevEl: '.prev',
+        },
+
       })
     }
 
