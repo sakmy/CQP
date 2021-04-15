@@ -82,21 +82,22 @@ window.onload = function() {
       containLabel: true
     },
     xAxis: {
-      type: 'category',
-      data: [  '药特分公司' ,'药特分公司' ,'新特药品','渝医贸药品','药品料']
+      type: 'value',
+      boundaryGap: [0, 0.01]
+
 
     },
     yAxis: {
-      type: 'value',
-      boundaryGap: [0, 0.01]
+      type: 'category',
+      data: [  '药特分公司' ,'药特分公司' ,'新特药品','渝医贸药品','药品料', '药特分公司' , '药特分公司' ,'药特分公司' ,'新特药品','渝医贸药品','药品料', '药特分公司' ,'药特分公司' ,'新特药品','渝医贸药品','药品料']
     },
     series: [{
       name: '2011年',
       type: 'bar',
-      data: [18203, 23489, 29034, 104970, 24970],
+      data: [18203, 23489, 29034, 104970, 24970,18203, 23489, 29034, 104970, 24970, 23489, 29034, 104970, 24970, 104970, 24970],
       label: {
         show: true,
-        position: 'top',
+        position: 'right',
       },
       barWidth: 24,
       itemStyle: {

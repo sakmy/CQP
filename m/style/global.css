@@ -1054,9 +1054,9 @@ border-radius: 0px 12px 12px 0px;*/
   color: #333;
 }
 .demem {
-  width: 14px;
-  height: 14px;
-  margin-right: 8px;
+  width: .2rem;
+  height: .2rem;
+  margin-right: .12rem;
   border-radius: 50%;
 }
 .demem1 {
@@ -1842,4 +1842,56 @@ border-radius: 0px 12px 12px 0px;*/
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: block;
+}
+
+.psr{
+  position:relative;
+}
+.shouqi{
+  position:absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top:1px solid #eee;
+  height: .72rem;
+  background:#fff;
+}
+.shouqi em{
+  margin-left: 10px;
+}
+.pb100{
+  padding-bottom: 1rem;
+}
+.wawcont{
+  height: 4.46rem;overflow:hidden;
+}
+.demem3-x{
+  position:relative;
+  width: .15rem;
+  height: .15rem;
+  margin-right: .26rem;
+  left: .1rem;
+  background:#fff;
+  border:1px solid #0064dc;
+
+}
+.demem3-x:after{
+  content: "";
+  position:absolute;
+  left: -.15rem;
+  width: .15rem;
+  height: .03rem;
+  background:#0064dc;
+  top: .06rem ;
+}.demem3-x:before{
+  content: "";
+  position:absolute;
+  right: -.15rem;
+   width: .15rem;
+  height: .03rem;
+  background:#0064dc;
+  top: .06rem ;
 }
