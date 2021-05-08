@@ -214,20 +214,21 @@
             </div>
           </div>
         </div>
-        <div class="wdwitm">
-          <div class="wiitlt">有效供应商数
-
-          </div>
-
+        <div class="wdwitm psr pb100">
+          <div class="wiitlt">有效供应商数</div>
           <div class="wsincont">
-            <div class="charwa">
-              <div class="scichart" id="ch1" style="height: 3.16rem;">
+            <div :class="{wawcont: zhankai==0}">
+              <div class="charwa">
+                <div class="scichart" id="ch1" style="height: 13.46rem;">
 
+                </div>
               </div>
+              <div class="shouqi" @click="zhankai=1" v-if="zhankai==0">查看全部 <em class="fa fa-angle-down"></em></div>
+              <div class="shouqi" @click="zhankai=0" v-if="zhankai==1">收起 <em class="fa fa-angle-up"></em></div>
+
             </div>
           </div>
         </div>
-
 
         <div class="wdwitm">
           <div class="wiitlt">有效供应商数 </div>
@@ -367,6 +368,7 @@
         cur: 0,
         custab: 0,
         menuxiala: 0,
+        zhankai: 0,
         iconList1: [
           1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,42
         ],

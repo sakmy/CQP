@@ -28,19 +28,19 @@ window.onload = function() {
          interval:0,
          rotate:40,
          margin:20,
-         
+
       },
-      
+
             axisTick: {
                 alignWithLabel: true
             },
       "axisLine":{       //y轴
           "show":false
-      
+
       },
         }
     ],
-  
+
     yAxis: [
         {
             type: 'value',
@@ -66,7 +66,7 @@ window.onload = function() {
     },
     barWidth: 34,
     itemStyle: {
-  
+
       normal: {
        // barBorderRadius:[3, 3, 0, 0],
         color: new echarts.graphic.LinearGradient(0, 1, 0, 0, [{
@@ -109,19 +109,19 @@ window.onload = function() {
          interval:0,
          rotate:40,
          margin:20,
-         
+
       },
-      
+
             axisTick: {
                 alignWithLabel: true
             },
       "axisLine":{       //y轴
           "show":false
-      
+
       },
         }
     ],
-  
+
     yAxis: [
         {
             type: 'value',
@@ -147,7 +147,7 @@ window.onload = function() {
     },
     barWidth: 34,
     itemStyle: {
-  
+
       normal: {
        // barBorderRadius:[3, 3, 0, 0],
         color: new echarts.graphic.LinearGradient(0, 1, 0, 0, [{
@@ -187,19 +187,19 @@ window.onload = function() {
          interval:0,
          rotate:40,
          margin:20,
-         
+
       },
-      
+
             axisTick: {
                 alignWithLabel: true
             },
       "axisLine":{       //y轴
           "show":false
-      
+
       },
         }
     ],
-  
+
     yAxis: [
         {
             type: 'value',
@@ -225,7 +225,7 @@ window.onload = function() {
     },
     barWidth: 34,
     itemStyle: {
-  
+
       normal: {
        // barBorderRadius:[3, 3, 0, 0],
         color: new echarts.graphic.LinearGradient(0, 1, 0, 0, [{
@@ -245,8 +245,13 @@ window.onload = function() {
       text: '折线图堆叠'
     },
     tooltip: {
-      trigger: 'axis'
-    },
+        trigger: "axis",
+        confine: true,
+
+        position: function(point, params, dom, rect, size) {
+          dom.style.transform = "translateZ(0)";
+        }
+      },
     legend: {
       show: false,
       data: ['同期期末应付账款', '期末应付账款', '期末应付账款同比增长率']

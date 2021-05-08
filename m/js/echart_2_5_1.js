@@ -289,8 +289,13 @@ window.onload = function() {
       text: '折线图堆叠'
     },
     tooltip: {
-      trigger: 'axis'
-    },
+        trigger: "axis",
+        confine: true,
+
+        position: function(point, params, dom, rect, size) {
+          dom.style.transform = "translateZ(0)";
+        }
+      },
     legend: {
       show: false,
       data: ['同期期末应付账款', '期末应付账款', '期末应付账款同比增长率']
