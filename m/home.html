@@ -13,6 +13,10 @@
     <link href="libs/style/font-awesome.min.css" rel="stylesheet">
     <script type="text/javascript" src="js/echarts.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
+    <!-- 引入样式 -->
+<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+<!-- 引入组件库 -->
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
   </head>
   <body>
     <div class="loading"></div>
@@ -721,69 +725,37 @@
 
                   <div class="dabiadmx">
                     <div class="ynshtab">
-                      <ul>
-                        <li>
-                          <div class="dwicms"><img src="images/pai1.png" alt="" /></div>
-                          <div class="dsjibil">
-                            <div class="dwjsl1">
-                              <span class="desns1">A医药公司</span>
-                              <span class="desns2">计划值</span>
-                              <span class="desns3">2000</span>
-                              <span class="desns2">完成值/率</span>
-                              <span class="desns4">1677 /80%</span>
-                            </div>
-                            <div class="jindwa jindwa1">
-                              <div class="jinduin"></div>
-                            </div>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="dwicms"><img src="images/pai2.png" alt="" /></div>
-                          <div class="dsjibil">
-                            <div class="dwjsl1">
-                              <span class="desns1">A医药公司</span>
-                              <span class="desns2">计划值</span>
-                              <span class="desns3">2000</span>
-                              <span class="desns2">完成值/率</span>
-                              <span class="desns4">1677 /80%</span>
-                            </div>
-                            <div class="jindwa jindwa1">
-                              <div class="jinduin"></div>
-                            </div>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="dwicms"><img src="images/pai3.png" alt="" /></div>
-                          <div class="dsjibil">
-                            <div class="dwjsl1">
-                              <span class="desns1">A医药公司</span>
-                              <span class="desns2">计划值</span>
-                              <span class="desns3">2000</span>
-                              <span class="desns2">完成值/率</span>
-                              <span class="desns4">1677 /80%</span>
-                            </div>
-                            <div class="jindwa jindwa1">
-                              <div class="jinduin"></div>
-                            </div>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="dwicms"><img src="images/pai4.png" alt="" /></div>
-                          <div class="dsjibil">
-                            <div class="dwjsl1">
-                              <span class="desns1">A医药公司</span>
-                              <span class="desns2">计划值</span>
-                              <span class="desns3">2000</span>
-                              <span class="desns2">完成值/率</span>
-                              <span class="desns4">1677 /80%</span>
-                            </div>
-                            <div class="jindwa jindwa1">
-                              <div class="jinduin"></div>
-                            </div>
-                          </div>
-                        </li>
+                       <el-table
+                        :data="tableData"
+                        stripe
+                        class="mytables"
+                        style="width: 100%">
 
-                      </ul>
+                        <el-table-column
+                          type="index"
+                          label="序号"
+                          width="50">
+                        </el-table-column>
+                        <el-table-column
+                          prop="name"
+                          label="公司名称"
+                           >
+                        </el-table-column>
+                        <el-table-column
+                          prop="jihuazhi"
+                          label="计划值"
+                          >
+                        </el-table-column>
+                        <el-table-column
+                          prop="wanchengzhi"
+                          label="完成值">
+                        </el-table-column>
+                        <el-table-column
+                          prop="wanchenglv"
+                          label="完成率">
+                        </el-table-column>
+
+                      </el-table>
                       </div>
 
                       <div class="ynshtab" style="display:none;">利润</div>
@@ -878,6 +850,47 @@
         cur: 0,
         custab: 0,
         menuxiala: 0,
+        tableData: [{
+
+          name: 'xxxxxx',
+          jihuazhi: '1231',
+          wanchengzhi: '1231',
+          wanchenglv: '1231',
+
+
+        },{
+
+          name: 'xxxxxx',
+          jihuazhi: '1231',
+          wanchengzhi: '1231',
+          wanchenglv: '1231',
+
+
+        },{
+
+          name: 'xxxxxx',
+          jihuazhi: '1231',
+          wanchengzhi: '1231',
+          wanchenglv: '1231',
+
+
+        },{
+
+          name: 'xxxxxx',
+          jihuazhi: '1231',
+          wanchengzhi: '1231',
+          wanchenglv: '1231',
+
+
+        },{
+
+          name: 'xxxxxx',
+          jihuazhi: '1231',
+          wanchengzhi: '1231',
+          wanchenglv: '1231',
+
+
+        }],
         iconList1: [
           1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,42
         ],
