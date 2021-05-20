@@ -12,10 +12,10 @@ html {
   position: relative;
 }
 .mebubtn {
-  padding-left: .59rem;
+  padding-left: .79rem;
   background: url(../images/menu.png) no-repeat center left;
-  background-size: .47rem .47rem;
-  line-height: .47rem;
+  background-size: .67rem .77rem;
+  line-height: 0.71rem;
   color: #fff;
   text-shadow: 0px 2px 4px rgba(4, 19, 57, 0.82);
   font-size: .28rem;
@@ -25,8 +25,8 @@ html {
 }
 .exit {
   position: absolute;
-  width: .48rem;
-  height: .48rem;
+  width: .68rem;
+  height: .68rem;
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -38,9 +38,9 @@ html {
   bottom: .32rem;
 }
 .exit img {
-  width: .2rem;
+  width: .29rem;
   position: relative;
-  left: .03rem;
+  left: .06rem;
 }
 .tabbox {
   display: flex;
